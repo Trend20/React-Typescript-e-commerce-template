@@ -5,6 +5,7 @@ import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import Products from './pages/products/Products';
 import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/products" element={<Products />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
