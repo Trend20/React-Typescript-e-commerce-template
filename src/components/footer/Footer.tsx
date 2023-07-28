@@ -1,8 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='footer'>
+      <div className="footer-logo">
+        <p>Footer Logo Here</p>
+      </div>
+        <ul>
+            <Link to='/services'>Footer Link 1</Link>
+            <Link to='/services'>Footer Link 2</Link>
+            <Link to='/services'>Footer Link 3</Link>
+        </ul>
+    </div>
   )
 }
 
