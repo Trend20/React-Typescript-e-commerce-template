@@ -7,7 +7,7 @@ import Products from './pages/products/Products';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 
-function App() {
+const App = ():JSX.Element  =>{
   return (
     <BrowserRouter>
       <div className="app">
