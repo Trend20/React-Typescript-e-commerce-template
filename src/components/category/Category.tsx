@@ -1,6 +1,70 @@
-const Category = () =>{
+import { useState} from "react";
+import {NavigateFunction, useNavigate} from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
+
+export interface Categories{
+    name: string;
+    categoryLink: string;
+    id: any,
+}
+
+const categories: Categories[] = [
+    {
+        name:'accessories',
+        categoryLink:'/store/category/accessories',
+        id: uuidv4()
+    },
+    {
+        name:'outdoor',
+        categoryLink:'/store/category/outdoor',
+        id: uuidv4()
+    },
+    {
+        name:'mens',
+        categoryLink:'/store/category/mens',
+        id: uuidv4()
+    },
+    {
+        name:'footware',
+        categoryLink:'/store/category/footware',
+        id: uuidv4()
+    },
+    {
+        name:'womans',
+        categoryLink:'/store/category/womans',
+        id: uuidv4()
+    },
+    {
+        name:'outware',
+        categoryLink:'/store/category/outware',
+        id: uuidv4()
+    },
+    {
+        name:'jewelry',
+        categoryLink:'/store/category/jewelry',
+        id: uuidv4()
+    },
+    {
+        name:'sportsware',
+        categoryLink:'/store/category/sportsware',
+        id: uuidv4()
+    }
+
+]
+const Category = (): JSX.Element =>{
+    const navigate: NavigateFunction = useNavigate();
     return(
-        <div>Category</div>
+        <div className='category'>
+            <div className="category-links">
+                {
+                    categories.map((category) =>{
+                        return(
+                            <p onClick={() => navigate(category.categoryLink)}>{category.name}</p>
+                        )
+                    })
+                }
+            </div>
+        </div>
     )
 }
 
