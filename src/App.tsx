@@ -6,6 +6,7 @@ import Register from './pages/register/Register';
 import Products from './pages/products/Products';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
+import Contact from "./components/contact/Contact";
 
 const App = ():JSX.Element  =>{
   return (
@@ -16,6 +17,8 @@ const App = ():JSX.Element  =>{
           <Route path="/login"  element={<Login />}/>
           <Route path="/register" element={<Register />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/contacts" element={<Contact />} />
+          <Route path="/blog" element={<Products />} />
         </Routes>
         <Footer />
       </div>
