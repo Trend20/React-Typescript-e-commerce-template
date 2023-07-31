@@ -1,6 +1,7 @@
 import { useState} from "react";
 import {NavigateFunction, useNavigate} from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
+import Search from "../search/Search";
 
 export interface Categories{
     name: string;
@@ -64,6 +65,7 @@ const Category = (): JSX.Element =>{
                     })
                 }
             </div>
+            <Search />
         </div>
     )
 }
