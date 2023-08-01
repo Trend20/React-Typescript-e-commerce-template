@@ -64,6 +64,7 @@
   align-items: center;
   width: 60%;
   justify-content: space-between;
+  cursor: pointer;
 }
 /*end of category styles*/
 

@@ -13,9 +13,7 @@
 
 .new{
     display: flex;
-    background: url("../../assests/img/new.jpg");
-    /*background-position: center;*/
-    background-repeat: no-repeat;
+    background: url("../../assests/img/new.jpg") no-repeat;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -41,9 +39,8 @@
 }
 
 #men{
-    background: url("../../assests/img/men.jpg");
+    background: url("../../assests/img/men.jpg") no-repeat;
     height: 250px;
-    background-repeat: no-repeat;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
