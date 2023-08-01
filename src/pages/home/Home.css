@@ -30,9 +30,8 @@
 }
 
 #women{
-    background: url("../../assests/img/women.jpg");
+    background: url("../../assests/img/women.jpg") no-repeat;
     height: 250px;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -12,10 +12,10 @@ const Navbar = (): JSX.Element => {
       </div>
       <div className="nav-links">
           <ul>
-              <Link to='/'>Home</Link>
-              <Link to='/products'>shops</Link>
-              <Link to='/blog'>Blog</Link>
-              <Link to='/contacts'>Contacts</Link>
+              <Link to='/' className='navLinkItem'>Home</Link>
+              <Link to='/products' className='navLinkItem'>shops</Link>
+              <Link to='/blog' className='navLinkItem'>Blog</Link>
+              <Link to='/contacts' className='navLinkItem'>Contacts</Link>
           </ul>
       </div>
 
