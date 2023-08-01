@@ -8,7 +8,7 @@
 }
 
 .app{
-  padding: 0 150px;
+  width: 100%;
 }
 
 /*navbar styles*/
@@ -17,7 +17,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 150px;
 }
 
 .nav-action{
@@ -47,6 +47,25 @@
 /*end of navbar styles*/
 
 /*category styles*/
+
+.category{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: black;
+  height: 70px;
+  color: #fff;
+  padding: 20px 150px;
+}
+
+.category-links{
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+}
+/*end of category styles*/
 
 
 
