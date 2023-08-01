@@ -16,6 +16,7 @@ import Womans from "./components/category/womans/Womans";
 import Footware from "./components/category/footware/Footware";
 import Mens from "./components/category/mens/Mens";
 import Outdoor from "./components/category/outdoor/Outdoor";
+import Home from "./pages/home/Home";
 
 const App = ():JSX.Element  =>{
   return (
@@ -24,6 +25,7 @@ const App = ():JSX.Element  =>{
         <Navbar />
         <Category />
         <Routes>
+          <Route path="/"  element={<Home />}/>
           <Route path="/login"  element={<Login />}/>
           <Route path="/register" element={<Register />} />
           <Route path="/products" element={<Products />} />

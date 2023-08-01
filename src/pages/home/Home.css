@@ -1,0 +1,85 @@
+.hero{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.top-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.new{
+    display: flex;
+    background: url("../../assests/img/new.jpg");
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 500px;
+}
+
+.collection{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 500px;
+    margin-left: 30px;
+}
+
+#women{
+    background: url("../../assests/img/women.jpg");
+    height: 250px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#men{
+    background: url("../../assests/img/men.jpg");
+    height: 250px;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-content{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+.sale{
+    background: url("../../assests/img/sale.jpg");
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.free{
+    background: url("../../assests/img/free.jpg");
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footwear{
+    background: url("../../assests/img/footware.jpg");
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
