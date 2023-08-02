@@ -58,9 +58,9 @@ const Category = (): JSX.Element =>{
         <div className='category'>
             <div className="category-links">
                 {
-                    categories.map((category) =>{
+                    categories.map((category: Categories) =>{
                         return(
-                            <p onClick={() => navigate(category.categoryLink)}>{category.name}</p>
+                            <p key={category.id} onClick={() => navigate(category.categoryLink)}>{category.name}</p>
                         )
                     })
                 }
