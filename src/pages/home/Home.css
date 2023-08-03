@@ -25,6 +25,42 @@
     height: 500px;
 }
 
+.new h1{
+    color: #fff;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 5px;
+}
+
+.new h3{
+    color: #fff;
+    font-size: 52px;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: 5px;
+}
+
+.new button{
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #262626;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 300;
+    width: 20%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new button:hover{
+    background: #000;
+}
+
 .collection{
     display: flex;
     flex-direction: column;
@@ -40,6 +76,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#women h5,
+#men h5{
+    font-weight: 200;
+    font-size: 20px;
+}
+
+#women h3,
+#men h3{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1;
+    letter-spacing: 3px;
 }
 
 #men{
@@ -68,6 +118,21 @@
     justify-content: center;
 }
 
+.sale p{
+    font-weight: 200;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.sale h1{
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 1;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
 .free{
     background: url("../../assets/img/free.jpg");
     height: 250px;
@@ -77,6 +142,21 @@
     justify-content: center;
 }
 
+.free p{
+    font-weight: 200;
+    font-size: 20px;
+    color: #fff;
+}
+
+.free h1{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+
 .footwear{
     background: url("../../assets/img/footware.jpg");
     height: 250px;
@@ -84,6 +164,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.footwear p{
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.footwear h1{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1;
+    letter-spacing: 3px;
 }
 
 .brands{

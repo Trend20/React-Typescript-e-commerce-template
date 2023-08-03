@@ -6,7 +6,7 @@ import { HiMail} from 'react-icons/hi'
 import { TiLocation} from 'react-icons/ti'
 import { BiLogoFacebookSquare} from 'react-icons/bi'
 
-const Footer = () => {
+const Footer = ():JSX.Element => {
   return (
     <div className='footer'>
       <div className="information">
