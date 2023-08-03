@@ -199,6 +199,13 @@
     width: 100%;
 }
 
+.popular-products h1, .onsale-products h1{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 3px;
+}
+
 .product-items{
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -216,6 +223,20 @@
     max-width: 100%;
 }
 
+.product-item p{
+    line-height: 1;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 12px;
+    text-transform: capitalize !important;
+    margin-top: 20px;
+}
+
+.product-item h6{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
 /*deals*/
 .deals{
     display: grid;
@@ -226,6 +247,20 @@
     margin-top: 30px;
 }
 
+.deals h1{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1;
+    letter-spacing: 3px;
+}
+
+.deals h5{
+    font-size: 52px;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: 5px;
+}
+
 #deal-one{
     display: flex;
     flex-direction: column;
@@ -234,6 +269,7 @@
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
 
 #deal-two{
