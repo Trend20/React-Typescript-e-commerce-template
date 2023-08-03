@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Ysabeau SC', sans-serif;
-  /*overflow-x: hidden;*/
 }
 
 .app{
@@ -19,6 +18,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 250px;
+}
+
+.logo{
+  display: flex;
+}
+
+.logo h1{
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 8px;
+  font-size: 52px;
 }
 
 .nav-action{
@@ -44,6 +54,12 @@
 
 .navLinkItem{
   text-decoration: none !important;
+  font-size: .9rem;
+  color: #999999;
+}
+
+.navLinkItem:hover, .active{
+  color: #000;
 }
 /*end of navbar styles*/
 
@@ -66,6 +82,14 @@
   width: 60%;
   justify-content: space-between;
   cursor: pointer;
+}
+
+.category-links p{
+  color: #999999;
+}
+
+.category-links p:hover{
+  color: #fff;
 }
 /*end of category styles*/
 

@@ -12,7 +12,7 @@ const Navbar = (): JSX.Element => {
       </div>
       <div className="nav-links">
           <ul>
-              <Link to='/' className='navLinkItem'>Home</Link>
+              <Link to='/' className='navLinkItem active'>Home</Link>
               <Link to='/products' className='navLinkItem'>shops</Link>
               <Link to='/blog' className='navLinkItem'>Blog</Link>
               <Link to='/contacts' className='navLinkItem'>Contacts</Link>
