@@ -3,6 +3,8 @@ import './Home.css';
 import Brands from "./Brands";
 import PopularProducts from "./PopularProducts";
 import Deals from "./Deals";
+import ProductsOnSale from "./ProductsOnSale";
+import Showcase from "./Showcase";
 const Home = ():JSX.Element =>{
     return(
         <div className='home'>
@@ -10,6 +12,8 @@ const Home = ():JSX.Element =>{
             <Brands />
             <PopularProducts />
             <Deals />
+            <ProductsOnSale />
+            <Showcase />
         </div>
     )
 }

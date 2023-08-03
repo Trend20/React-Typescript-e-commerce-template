@@ -101,7 +101,6 @@ const Brands = ():JSX.Element =>{
                     );
                 })}
             </OwlCarousel>
-            <img src="../../" alt=""/>
         </div>
     )
 }
