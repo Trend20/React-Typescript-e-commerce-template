@@ -14,7 +14,7 @@ const Footer = () => {
           {
               information.map((info) =>{
                   return(
-                      <Link to={info.link}>{info.title}</Link>
+                      <Link to={info.link} className='footer-link'>{info.title}</Link>
                   )
               })
           }
@@ -24,7 +24,7 @@ const Footer = () => {
             {
                 pages.map((page) =>{
                     return(
-                        <Link to={page.link}>{page.title}</Link>
+                        <Link to={page.link} className='footer-link'>{page.title}</Link>
                     )
                 })
             }
@@ -32,9 +32,9 @@ const Footer = () => {
         <div className='contact'>
             <h3>CONTACT US</h3>
             <div className="contact-info">
-                <p><i><TiLocation /></i> 4578 Marmora Road, Glasgow</p>
-                <p><i><FaPhone /></i> 123-456-7890</p>
-                <p><i><HiMail /></i> info@demolink.org</p>
+                <p><i><TiLocation size={12}  /></i> 4578 Marmora Road, Glasgow</p>
+                <p><i><FaPhone size={12} /></i> 123-456-7890</p>
+                <p><i><HiMail size={12} /></i> info@demolink.org</p>
             </div>
         </div>
         <div className='follow'>
@@ -44,11 +44,11 @@ const Footer = () => {
                 <button>subscribe</button>
             </div>
             <div className="social-icons">
-                <i><BiLogoFacebookSquare /></i>
-                <i><FaTwitter /></i>
-                <i><FaYoutube /></i>
-                <i><FaInstagram /></i>
-                <i><FaPinterest /></i>
+                <i><BiLogoFacebookSquare size={15} color={'#999999'} /></i>
+                <i><FaTwitter size={15} color={'#999999'}/></i>
+                <i><FaYoutube size={15} color={'#999999'}/></i>
+                <i><FaInstagram size={15} color={'#999999'}/></i>
+                <i><FaPinterest size={15} color={'#999999'}/></i>
             </div>
         </div>
     </div>

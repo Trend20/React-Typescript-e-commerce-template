@@ -72,7 +72,69 @@
 /*footer */
 .footer{
   background: #262626;
-  padding: 20px 150px;
+  padding: 70px 150px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.information, .pages{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link{
+  text-decoration: none;
+  color: #999999;
+}
+
+.footer-link:hover{
+  color: #f43132;
+}
+
+.footer h3{
+  color: #fff;
+  margin: 20px 0;
+}
+
+.footer p{
+  color: #999999;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer p i{
+  margin-right: 10px;
+}
+
+.subscribe{
+  display: flex;
+  align-items: center;
+}
+
+.subscribe input{
+  outline: none;
+  border: 1px solid #999999;
+  padding: 12px;
+  width: 70%;
+  background: transparent;
+}
+
+.subscribe button{
+  padding: 12px;
+  outline: none;
+  width: 30%;
+  cursor: pointer;
+}
+
+.social-icons{
+  margin-top: 18px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 
