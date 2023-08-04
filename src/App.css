@@ -161,6 +161,46 @@
   cursor: pointer;
 }
 
+/*login*/
+.login{
+  display: flex;
+  justify-content: center;
+  height: 445px;
+  width: 100%;
+}
+
+.login form{
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  width: 50%;
+}
+
+.input-field{
+  display: flex;
+  width: 100%;
+}
+
+.input-field input{
+  padding: 10px;
+  margin-top: 15px;
+  outline: none;
+  width: 50%;
+}
+
+.login form button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #fff;
+  background: #000;
+}
+
 
 
 
