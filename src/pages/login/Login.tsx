@@ -1,8 +1,19 @@
-import React from 'react'
+import {useState, useEffect} from 'react'
 
-const Login = () => {
+const Login = ():JSX.Element => {
+  const [email, setEmail] = useState('')
   return (
-    <div>Login</div>
+    <div className='login'>
+      <form>
+        <div className="input-field">
+          <input type="email" placeholder='email' required/>
+        </div>
+        <div className="input-field">
+          <input type="password" placeholder='password' required/>
+        </div>
+        <button>Login</button>
+      </form>
+    </div>
   )
 }
 

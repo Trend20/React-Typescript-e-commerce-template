@@ -10,6 +10,7 @@ export interface Product{
     id: number
 }
 
+
 // popular
 export const popularProducts:Product[] =[
     {
