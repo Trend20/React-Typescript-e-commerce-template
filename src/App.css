@@ -61,6 +61,10 @@
 .navLinkItem:hover, .active{
   color: #000;
 }
+
+#auth-icon{
+  cursor: pointer;
+}
 /*end of navbar styles*/
 
 /*category styles*/

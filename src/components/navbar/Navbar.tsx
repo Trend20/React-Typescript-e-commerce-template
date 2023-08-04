@@ -22,7 +22,7 @@ const Navbar = (): JSX.Element => {
         <div className="nav-action">
             <p onClick={() => navigate('/cart')}><i><FaShoppingCart /></i></p>
             <p onClick={() => navigate('/comparison')}><i><FaBalanceScale /></i></p>
-            <p onClick={() => navigate('/login')}><i><FaUserAlt /></i></p>
+            <p onClick={() => navigate('/login')} id='auth-icon'><i><FaUserAlt /></i></p>
         </div>
     </div>
   )
