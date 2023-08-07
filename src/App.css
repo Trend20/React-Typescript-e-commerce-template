@@ -54,7 +54,7 @@
 
 .navLinkItem{
   text-decoration: none !important;
-  font-size: .9rem;
+  font-size: 1.2rem;
   color: #999999;
 }
 
@@ -212,3 +212,7 @@
 
 
 
+/*!*responsiveness*!*/
+/*@media screen(max-width: 768px) {*/
+/*  */
+/*}*/
