@@ -303,10 +303,11 @@
   /*footer */
   .footer{
     background: #262626;
-    padding: 70px 250px;
+    padding: 30px 20px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-direction: column;
   }
 
   .information, .pages{
@@ -410,5 +411,4 @@
     background: #000;
     border: none;
   }
-
 }
