@@ -166,15 +166,15 @@
 }
 
 /*login*/
-.login{
+.login, .register{
   display: flex;
   justify-content: center;
   /*align-items: center;*/
-  height: 445px;
+  height: 480px;
   width: 100%;
 }
 
-.login form{
+.login form, .register form{
   display: flex;
   flex-direction: column;
   padding-top: 50px;
@@ -194,7 +194,7 @@
   border: 1px solid #000;
 }
 
-.login form button{
+.login form button, .register form button{
   display: flex;
   align-items: center;
   justify-content: center;

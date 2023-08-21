@@ -28,6 +28,7 @@ const App = ():JSX.Element  =>{
           <Route path="/"  element={<Home />}/>
           <Route path="/login"  element={<Login />}/>
           <Route path="/register" element={<Register />} />
+          <Route path="/reset-password" element={<Contact />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contacts" element={<Contact />} />
           <Route path="/store/category/accessories" element={<Accessories />} />

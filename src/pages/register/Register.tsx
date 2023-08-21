@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Register = () => {
+const Register = ():JSX.Element => {
   return (
-    <div className='register-page'>
-      <h1>Register</h1>
+    <div className='register'>
+      {/*<h1>Register</h1>*/}
       <form action="">
         <div className="input-field">
           <input type="text" placeholder='First Name' />
@@ -20,6 +20,7 @@ const Register = () => {
         <div className="input-field">
           <input type="password" placeholder='Repeat Password' />
         </div>
+        <button>Register</button>
       </form>
     </div>
   )
