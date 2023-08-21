@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from "react-router-dom";
 
 const Register = ():JSX.Element => {
   return (
@@ -19,6 +20,9 @@ const Register = ():JSX.Element => {
         </div>
         <div className="input-field">
           <input type="password" placeholder='Repeat Password' />
+        </div>
+        <div className="register-actions">
+          <p>Already registered?  <Link to='/login' style={{textDecoration:'none'}}>Login</Link></p>
         </div>
         <button>Register</button>
       </form>

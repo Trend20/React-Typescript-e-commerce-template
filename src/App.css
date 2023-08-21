@@ -169,8 +169,7 @@
 .login, .register{
   display: flex;
   justify-content: center;
-  /*align-items: center;*/
-  height: 480px;
+  padding: 100px 0;
   width: 100%;
 }
 
