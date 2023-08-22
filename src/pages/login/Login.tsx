@@ -1,7 +1,7 @@
 import React, {Dispatch, useState} from 'react'
 import { useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-import {addUser} from "../../features/slices/authSlice";
+import {addUser, updateLoginStatus} from "../../features/slices/authSlice";
 import Swal from "sweetalert2";
 
 const Login = ():JSX.Element => {
@@ -18,7 +18,10 @@ const Login = ():JSX.Element => {
             password
         }
        if(users.length < 1){
-           dispatch(addUser(newUser))
+           dispatch(addUser(newUser));
+           dispatch(updateLoginStatus(true));
+           setEmail('');
+           setPassword('');
        }else{
            Swal.fire({
                icon: 'error',
