@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useState} from 'react'
+import React, {ChangeEvent, FormEvent, useState} from 'react'
 import { Link} from "react-router-dom";
 
 const Register = ():JSX.Element => {
@@ -7,10 +7,23 @@ const Register = ():JSX.Element => {
   const [registerEmail, setRegisterEmail] = useState<string>('')
   const [registerPassword, setRegisterPassword] = useState<string>('')
   const [repeatPassword, setRepeatPassword] = useState<string>('')
+
+  // handle register
+  const registerUser = (e:FormEvent):void =>{
+    e.preventDefault()
+    const newUserDetails ={
+      firstName,
+      lastName,
+      registerEmail,
+      registerPassword,
+      repeatPassword
+    }
+    console.log(newUserDetails)
+  }
   return (
     <div className='register'>
       {/*<h1>Register</h1>*/}
-      <form action="">
+      <form onSubmit={registerUser}>
         <div className="input-field">
           <input type="text" placeholder='First Name' value={firstName} onChange={(e: ChangeEvent<HTMLInputElement>) => setFirstName(e.target.value)}/>
         </div>
