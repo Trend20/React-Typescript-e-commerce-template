@@ -1,13 +1,16 @@
 import { useState} from "react";
+import {NavigateFunction, useNavigate} from "react-router-dom";
 
 const Hero = ():JSX.Element =>{
+
+    const navigate:NavigateFunction = useNavigate()
     return(
         <div className='hero'>
             <div className="top-content">
                 <div className="new">
                     <h1>Sale</h1>
                     <h3>GET UP TO 25% OFF</h3>
-                    <button>shop now</button>
+                    <button onClick={() => navigate('/accessories')}>shop now</button>
                 </div>
                 <div className="collection">
                     <div className="collection-item" id='women'>
