@@ -22,9 +22,9 @@ const Footer = ():JSX.Element => {
         <div className='pages'>
             <h3>PAGES</h3>
             {
-                pages.map((page) =>{
+                pages.map((page, index) =>{
                     return(
-                        <Link to={page.link} className='footer-link'>{page.title}</Link>
+                        <Link to={page.link} className='footer-link' key={index}>{page.title}</Link>
                     )
                 })
             }
