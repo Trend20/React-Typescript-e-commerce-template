@@ -40,8 +40,10 @@ const Footer = ():JSX.Element => {
         <div className='follow'>
             <h3>FOLLOW US</h3>
             <div className="subscribe">
-                <input type="email" placeholder='Enter your email'/>
-                <button>subscribe</button>
+                <form>
+                    <input type="email" placeholder='Enter your email'/>
+                    <button>subscribe</button>
+                </form>
             </div>
             <div className="social-icons">
                 <i><BiLogoFacebookSquare size={15} color={'#999999'} /></i>
