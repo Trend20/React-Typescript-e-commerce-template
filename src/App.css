@@ -207,12 +207,12 @@
   background: #000;
   border: none;
 }
+/* REGULAR STYLES */
 
 
 
 
-
-/*!*responsiveness*!*/
+/*!*RESPONSIVENESS*!*/
 @media(max-width: 768px) {
   /*navbar styles*/
   .navbar{
