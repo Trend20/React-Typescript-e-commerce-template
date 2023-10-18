@@ -1,6 +1,10 @@
-const Contact = () =>{
+import GoogleMap from "../map/GoogleMap";
+
+const Contact = (): JSX.Element =>{
     return(
-        <div></div>
+        <div className="contact">
+            <GoogleMap />
+        </div>
     )
 }
 
