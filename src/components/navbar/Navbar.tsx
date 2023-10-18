@@ -1,7 +1,7 @@
-import React from 'react'
 import {Link, NavigateFunction, useNavigate} from 'react-router-dom'
 import { FaShoppingCart, FaBalanceScale, FaUserAlt} from 'react-icons/fa'
 import { useSelector} from "react-redux";
+import { navData } from '../../assets/data/navData';
 
 
 const Navbar = (): JSX.Element => {
@@ -13,12 +13,13 @@ const Navbar = (): JSX.Element => {
         <h1 onClick={() => navigate('/')}>Styler</h1>
       </div>
       <div className="nav-links">
-          <ul>
-              <Link to='/' className='navLinkItem active'>Home</Link>
-              <Link to='/products' className='navLinkItem'>shops</Link>
-              <Link to='/blog' className='navLinkItem'>Blog</Link>
-              <Link to='/contacts' className='navLinkItem'>Contacts</Link>
-          </ul>
+          {
+            navData.map((item) =>(
+              <ul>
+                <Link to={item.url} className='navLinkItem'>{item.name}</Link>
+              </ul>
+            ))
+          }
       </div>
 
         <div className="nav-action">
