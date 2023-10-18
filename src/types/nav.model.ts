@@ -3,8 +3,3 @@ export interface NavLinks{
   name: string;
   url: string;
 }
-
-export interface NavIcons{
-  name: string,
-  icon: any
-}
