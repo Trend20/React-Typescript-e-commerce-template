@@ -1,7 +1,7 @@
-const Footware = () =>{
-    return(
+const Footware = () => {
+  return (
         <div>Footware</div>
-    )
+  )
 }
 
-export default  Footware;
+export default Footware

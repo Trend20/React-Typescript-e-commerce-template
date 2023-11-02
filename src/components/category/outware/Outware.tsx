@@ -1,7 +1,7 @@
-const Outware = () =>{
-    return(
+const Outware = () => {
+  return (
         <div>Outware</div>
-    )
+  )
 }
 
-export default  Outware;
+export default Outware

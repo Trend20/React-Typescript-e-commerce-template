@@ -1,7 +1,7 @@
-const Mens = () =>{
-    return(
+const Mens = () => {
+  return (
         <div>Mens</div>
-    )
+  )
 }
 
-export default  Mens;
+export default Mens

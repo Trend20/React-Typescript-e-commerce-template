@@ -1,28 +1,28 @@
-import { createSlice} from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit'
 
-//define types
-interface CartItem{
-    total: 0;
-    isEmpty: boolean;
+// define types
+interface CartItem {
+  total: 0
+  isEmpty: boolean
 }
 
-interface InitialState{
-    items: CartItem[];
-    isEmpty: boolean;
+interface InitialState {
+  items: CartItem[]
+  isEmpty: boolean
 }
 
 const initialState: InitialState = {
-    items: [],
-    isEmpty: false
+  items: [],
+  isEmpty: false
 }
 
 const cartSlice = createSlice({
-    name:'cart',
-    initialState,
-    reducers: {
+  name: 'cart',
+  initialState,
+  reducers: {
 
-    }
+  }
 })
 
 export const {} = cartSlice.actions
-export default cartSlice.reducer;
+export default cartSlice.reducer

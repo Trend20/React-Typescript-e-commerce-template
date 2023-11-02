@@ -1,7 +1,7 @@
-const Accessories = () =>{
-    return(
+const Accessories = () => {
+  return (
         <div>Accessories</div>
-    )
+  )
 }
 
-export default  Accessories;
+export default Accessories

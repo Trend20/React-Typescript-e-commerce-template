@@ -1,7 +1,7 @@
-const Jewelry = () =>{
-    return(
+const Jewelry = () => {
+  return (
         <div>Jewelry</div>
-    )
+  )
 }
 
-export default  Jewelry;
+export default Jewelry

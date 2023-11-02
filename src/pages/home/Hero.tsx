@@ -1,16 +1,15 @@
-import { useState} from "react";
-import {NavigateFunction, useNavigate} from "react-router-dom";
+import { useState } from 'react'
+import { type NavigateFunction, useNavigate } from 'react-router-dom'
 
-const Hero = ():JSX.Element =>{
-
-    const navigate:NavigateFunction = useNavigate()
-    return(
+const Hero = (): JSX.Element => {
+  const navigate: NavigateFunction = useNavigate()
+  return (
         <div className='hero'>
             <div className="top-content">
                 <div className="new">
                     <h1>Sale</h1>
                     <h3>GET UP TO 25% OFF</h3>
-                    <button onClick={() => navigate('/accessories')}>shop now</button>
+                    <button onClick={() => { navigate('/accessories') }}>shop now</button>
                 </div>
                 <div className="collection">
                     <div className="collection-item" id='women'>
@@ -38,7 +37,7 @@ const Hero = ():JSX.Element =>{
                 </div>
             </div>
         </div>
-    )
+  )
 }
 
-export default  Hero;
+export default Hero

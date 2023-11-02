@@ -1,6 +1,6 @@
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
-const ResetPassword = ():JSX.Element => {
+const ResetPassword = (): JSX.Element => {
   const [email, setEmail] = useState('')
   return (
     <div className='login'>
@@ -14,4 +14,4 @@ const ResetPassword = ():JSX.Element => {
   )
 }
 
-export default ResetPassword;
+export default ResetPassword

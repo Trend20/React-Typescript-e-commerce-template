@@ -1,7 +1,7 @@
-const Outdoor = () =>{
-    return(
+const Outdoor = () => {
+  return (
         <div>Outdoor</div>
-    )
+  )
 }
 
-export default  Outdoor;
+export default Outdoor

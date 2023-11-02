@@ -1,37 +1,36 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit'
 
-interface Product{
-  name: string;
-  quantity: number;
-  category: string;
-  isSold: boolean;
+interface Product {
+  name: string
+  quantity: number
+  category: string
+  isSold: boolean
   inCart: boolean
 }
 
-interface InitialState{
-  products: Product[];
-  product: Product;
+interface InitialState {
+  products: Product[]
+  product: Product
 }
 
-const initialState: InitialState ={
+const initialState: InitialState = {
   products: [],
-  product:{
+  product: {
     name: '',
     quantity: 0,
     category: '',
     isSold: false,
-    inCart: false,
+    inCart: false
   }
 }
 
 const productSlice = createSlice({
-  name:'product',
+  name: 'product',
   initialState,
-  reducers:{
+  reducers: {
     // define reducers here
   }
 })
 
-
-export const {} = productSlice.actions;
-export default productSlice.reducer;
+export const {} = productSlice.actions
+export default productSlice.reducer

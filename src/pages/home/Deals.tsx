@@ -1,6 +1,5 @@
-
-const Deals = ():JSX.Element =>{
-    return(
+const Deals = (): JSX.Element => {
+  return (
         <div className='deals'>
            <div id="deal-one">
                <h1>deal of the day</h1>
@@ -11,7 +10,7 @@ const Deals = ():JSX.Element =>{
                 <h5>up to 30% off</h5>
             </div>
         </div>
-    )
+  )
 }
 
-export default  Deals;
+export default Deals
