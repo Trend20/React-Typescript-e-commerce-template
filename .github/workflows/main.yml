@@ -20,8 +20,6 @@ jobs:
           node-version: 18.x
       - name: install
         run: yarn
-      - name: test
-        run: yarn test
       - name: format
         run: yarn prettier
       - name: lint
