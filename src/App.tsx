@@ -25,8 +25,8 @@ const App = (): JSX.Element => {
         <Navbar />
         <Category />
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/login" element={<Login />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/reset-password" element={<Contact />} />
           <Route path="/products" element={<Products />} />
