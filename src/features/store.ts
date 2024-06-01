@@ -7,7 +7,7 @@ import cartSlice from './slices/cartSlice'
 export const store: ToolkitStore<{ auth: any }> = configureStore({
   reducer: {
     auth: authSlice,
-    product: productSlice,
+    products: productSlice,
     cart: cartSlice
   }
 })

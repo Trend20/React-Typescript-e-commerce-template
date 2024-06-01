@@ -9,7 +9,7 @@ interface ProductProps {
 
 const SingleProduct:FC<ProductProps> = ({product}) =>{
     return (
-        <Link to={`/store/products/${product.description}`} className='product-item' key={product.id}>
+        <Link to={`/product/${product.id}`} className='product-item' key={product.id}>
             <img src={product.img} alt={product.description}/>
             <p>{product.description}</p>
             <h6><strong>{product.price}</strong></h6>

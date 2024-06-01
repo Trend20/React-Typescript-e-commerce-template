@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {FC, useEffect, useState} from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Login from './pages/login/Login'
@@ -17,8 +17,11 @@ import Footware from './components/category/footware/Footware'
 import Mens from './components/category/mens/Mens'
 import Outdoor from './components/category/outdoor/Outdoor'
 import Home from './pages/home/Home'
+import ProductDetails from "./pages/products/ProductDetails";
 
-const App = (): JSX.Element => {
+const App:FC = () => {
+
+
   return (
     <BrowserRouter>
       <div className="app">
@@ -31,6 +34,7 @@ const App = (): JSX.Element => {
             <Route path="/register" element={<Register />} />
             <Route path="/reset-password" element={<Contact />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/contacts" element={<Contact />} />
             <Route path="/store/category/accessories" element={<Accessories />} />
             <Route path="/store/category/outdoor" element={<Outdoor />} />

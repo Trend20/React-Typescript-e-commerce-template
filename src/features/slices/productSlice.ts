@@ -28,9 +28,11 @@ const productSlice = createSlice({
   name: 'product',
   initialState,
   reducers: {
-    // define reducers here
+    fetchAllProducts: (state: InitialState, action: { payload: any, type: string }): void => {
+      state.products = action.payload
+    }
   }
 })
 
-export const {} = productSlice.actions
+export const {fetchAllProducts} = productSlice.actions
 export default productSlice.reducer
