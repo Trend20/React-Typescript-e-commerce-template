@@ -24,24 +24,26 @@ const App = (): JSX.Element => {
       <div className="app">
         <Navbar />
         <Category />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/reset-password" element={<Contact />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contacts" element={<Contact />} />
-          <Route path="/store/category/accessories" element={<Accessories />} />
-          <Route path="/store/category/outdoor" element={<Outdoor />} />
-          <Route path="/store/category/mens" element={<Mens />} />
-          <Route path="/store/category/footware" element={<Footware />} />
-          <Route path="/store/category/womans" element={<Womans />} />
-          <Route path="/store/category/outware" element={<Outware />} />
-          <Route path="/store/category/jewelry" element={<Jewelry />} />
-          <Route path="/store/category/sportsware" element={<Sportsware />} />
-          {/* <Route path="/blog" element={<Products />} /> */}
-          {/* <Route path="/blog" element={<Products />} /> */}
-        </Routes>
+        <div className="flex flex-col min-h-screen">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/reset-password" element={<Contact />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/contacts" element={<Contact />} />
+            <Route path="/store/category/accessories" element={<Accessories />} />
+            <Route path="/store/category/outdoor" element={<Outdoor />} />
+            <Route path="/store/category/mens" element={<Mens />} />
+            <Route path="/store/category/footware" element={<Footware />} />
+            <Route path="/store/category/womans" element={<Womans />} />
+            <Route path="/store/category/outware" element={<Outware />} />
+            <Route path="/store/category/jewelry" element={<Jewelry />} />
+            <Route path="/store/category/sportsware" element={<Sportsware />} />
+            {/* <Route path="/blog" element={<Products />} /> */}
+            {/* <Route path="/blog" element={<Products />} /> */}
+          </Routes>
+        </div>
         <Footer />
       </div>
     </BrowserRouter>
