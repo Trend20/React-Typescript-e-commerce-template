@@ -1,6 +1,6 @@
 import {FC} from "react";
 import { popularProducts } from '../../assets/data/popular'
-import SingleProduct from "../../components/SingleProduct";
+import SingleProduct from "../products/SingleProduct";
 import {Product} from "../../types/product";
 
 const PopularProducts:FC = () => {

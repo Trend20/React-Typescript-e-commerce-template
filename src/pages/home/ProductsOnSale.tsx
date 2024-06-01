@@ -1,7 +1,7 @@
 import { onsaleProducts } from '../../assets/data/popular'
 import {FC} from "react";
 import {Product} from "../../types/product";
-import SingleProduct from "../../components/SingleProduct";
+import SingleProduct from "../products/SingleProduct";
 
 const ProductsOnSale:FC = () => {
   return (

@@ -1,6 +1,6 @@
 import {FC} from "react";
 import {Link} from "react-router-dom";
-import {Product} from "../types/product";
+import {Product} from "../../types/product";
 
 
 interface ProductProps {
