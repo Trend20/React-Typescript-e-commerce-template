@@ -1,6 +1,7 @@
 import {FC} from "react";
-import { popularProducts, type Product } from '../../assets/data/popular'
-import SingleProduct from "./Product";
+import { popularProducts } from '../../assets/data/popular'
+import SingleProduct from "../../components/SingleProduct";
+import {Product} from "../../types/product";
 
 const PopularProducts:FC = () => {
   return (

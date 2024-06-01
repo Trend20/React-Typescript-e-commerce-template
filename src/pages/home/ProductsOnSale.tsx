@@ -1,6 +1,7 @@
-import { onsaleProducts, type Product } from '../../assets/data/popular'
-import {Link} from "react-router-dom";
+import { onsaleProducts } from '../../assets/data/popular'
 import {FC} from "react";
+import {Product} from "../../types/product";
+import SingleProduct from "../../components/SingleProduct";
 
 const ProductsOnSale:FC = () => {
   return (
@@ -10,11 +11,7 @@ const ProductsOnSale:FC = () => {
                 {
                     onsaleProducts.map((item: Product) => {
                       return (
-                            <Link to={'/'} className='product-item' key={item.id}>
-                                <img src={item.img} alt={item.description}/>
-                                <p>{item.description}</p>
-                                <h6><strong>{item.price}</strong></h6>
-                            </Link>
+                            <SingleProduct key={item.id} product={item} />
                       )
                     })
                 }

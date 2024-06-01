@@ -3,12 +3,7 @@ import popularTwo from '../img/popular2.jpg'
 import popularThree from '../img/popular3.jpg'
 import onsaleOne from '../img/onsale1.jpg'
 import onsaleTwo from '../img/onsale2.jpg'
-export interface Product {
-  img: string
-  description: string
-  price: string
-  id: number
-}
+import {Product} from "../../types/product";
 
 // popular
 export const popularProducts: Product[] = [

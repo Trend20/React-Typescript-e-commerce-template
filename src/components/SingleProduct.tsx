@@ -1,6 +1,7 @@
 import {FC} from "react";
-import {Product} from "../../assets/data/popular";
 import {Link} from "react-router-dom";
+import {Product} from "../types/product";
+
 
 interface ProductProps {
     product: Product

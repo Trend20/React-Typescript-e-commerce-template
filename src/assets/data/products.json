@@ -1,0 +1,538 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Men's Classic T-Shirt",
+      "category": "Men's Wear",
+      "price": 20.99,
+      "size": ["S", "M", "L", "XL"],
+      "color": ["Black", "White", "Blue"],
+      "material": "Cotton",
+      "brand": "Brand A",
+      "description": "A classic t-shirt made from 100% cotton for ultimate comfort.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 100,
+      "reviews": [
+        {"user": "JohnDoe", "rating": 5, "comment": "Great quality t-shirt!"},
+        {"user": "JaneSmith", "rating": 4, "comment": "Very comfortable but size runs a bit small."}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Men's Slim Fit Jeans",
+      "category": "Men's Wear",
+      "price": 45.50,
+      "size": ["30", "32", "34", "36"],
+      "color": ["Dark Blue", "Black"],
+      "material": "Denim",
+      "brand": "Brand B",
+      "description": "Slim fit jeans made from premium denim with a classic look.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 80,
+      "reviews": [
+        {"user": "AlexJ", "rating": 5, "comment": "Perfect fit and great style."},
+        {"user": "MikeH", "rating": 3, "comment": "Quality is good but not very comfortable."}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Men's Leather Jacket",
+      "category": "Men's Wear",
+      "price": 120.00,
+      "size": ["M", "L", "XL"],
+      "color": ["Black", "Brown"],
+      "material": "Leather",
+      "brand": "Brand C",
+      "description": "Stylish leather jacket with a modern fit and design.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 50,
+      "reviews": [
+        {"user": "SamK", "rating": 4, "comment": "Looks great and feels sturdy."},
+        {"user": "DavidB", "rating": 5, "comment": "Amazing jacket! Worth the price."}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Men's Casual Sneakers",
+      "category": "Footwear",
+      "price": 60.00,
+      "size": ["8", "9", "10", "11"],
+      "color": ["White", "Black"],
+      "material": "Canvas",
+      "brand": "Brand D",
+      "description": "Casual sneakers perfect for everyday wear.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 120,
+      "reviews": [
+        {"user": "ChrisM", "rating": 4, "comment": "Very comfortable and stylish."},
+        {"user": "EmilyR", "rating": 5, "comment": "My favorite pair of sneakers."}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Men's Running Shoes",
+      "category": "Footwear",
+      "price": 85.00,
+      "size": ["8", "9", "10", "11"],
+      "color": ["Blue", "Red", "Black"],
+      "material": "Mesh",
+      "brand": "Brand E",
+      "description": "Lightweight running shoes with excellent support.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 90,
+      "reviews": [
+        {"user": "Runner22", "rating": 5, "comment": "Great shoes for running."},
+        {"user": "FitGuy", "rating": 4, "comment": "Comfortable but could use more cushioning."}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Men's Dress Shoes",
+      "category": "Footwear",
+      "price": 95.00,
+      "size": ["8", "9", "10", "11"],
+      "color": ["Black", "Brown"],
+      "material": "Leather",
+      "brand": "Brand F",
+      "description": "Elegant dress shoes perfect for formal occasions.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 70,
+      "reviews": [
+        {"user": "BusinessMan", "rating": 5, "comment": "Perfect for work meetings."},
+        {"user": "StyleGuru", "rating": 4, "comment": "Very stylish and well-made."}
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Women's Summer Dress",
+      "category": "Women's Wear",
+      "price": 35.99,
+      "size": ["S", "M", "L", "XL"],
+      "color": ["Red", "Yellow", "Blue"],
+      "material": "Polyester",
+      "brand": "Brand G",
+      "description": "Light and airy summer dress perfect for warm days.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 100,
+      "reviews": [
+        {"user": "SummerGal", "rating": 5, "comment": "Love the colors and fit!"},
+        {"user": "Fashionista", "rating": 4, "comment": "Great dress but fabric is a bit thin."}
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Women's Skinny Jeans",
+      "category": "Women's Wear",
+      "price": 50.00,
+      "size": ["26", "28", "30", "32"],
+      "color": ["Light Blue", "Black"],
+      "material": "Denim",
+      "brand": "Brand H",
+      "description": "Stylish skinny jeans with a perfect fit.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 90,
+      "reviews": [
+        {"user": "JeanQueen", "rating": 5, "comment": "Best jeans I've ever bought."},
+        {"user": "TrendyMom", "rating": 4, "comment": "Good fit but fades after a few washes."}
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Women's Blouse",
+      "category": "Women's Wear",
+      "price": 25.00,
+      "size": ["S", "M", "L"],
+      "color": ["White", "Pink"],
+      "material": "Silk",
+      "brand": "Brand I",
+      "description": "Elegant silk blouse perfect for office wear.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 70,
+      "reviews": [
+        {"user": "OfficeChic", "rating": 5, "comment": "Perfect for work and very comfortable."},
+        {"user": "StyleSavvy", "rating": 4, "comment": "Nice blouse but a bit sheer."}
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Women's Heeled Sandals",
+      "category": "Footwear",
+      "price": 70.00,
+      "size": ["6", "7", "8", "9"],
+      "color": ["Black", "Nude"],
+      "material": "Synthetic",
+      "brand": "Brand J",
+      "description": "Stylish heeled sandals perfect for any occasion.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 60,
+      "reviews": [
+        {"user": "HeelLover", "rating": 5, "comment": "Very comfortable and stylish."},
+        {"user": "FashionDiva", "rating": 4, "comment": "Love the design but straps are a bit tight."}
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Women's Running Shoes",
+      "category": "Footwear",
+      "price": 80.00,
+      "size": ["6", "7", "8", "9"],
+      "color": ["Pink", "Grey"],
+      "material": "Mesh",
+      "brand": "Brand K",
+      "description": "Lightweight running shoes designed for comfort and performance.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 100,
+      "reviews": [
+        {"user": "RunnerGirl", "rating": 5, "comment": "Perfect for my daily runs."},
+        {"user": "ActiveMom", "rating": 4, "comment": "Great shoes but a bit narrow."}
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Women's Ankle Boots",
+      "category": "Footwear",
+      "price": 110.00,
+      "size": ["6", "7", "8", "9"],
+      "color": ["Brown", "Black"],
+      "material": "Leather",
+      "brand": "Brand L",
+      "description": "Stylish ankle boots with a modern look.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 80,
+      "reviews": [
+        {"user": "BootFan", "rating": 5, "comment": "Amazing quality and very comfortable."},
+        {"user": "ShoeLover", "rating": 4, "comment": "Stylish but a bit pricey."}
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Gold Necklace",
+      "category": "Jewellery",
+      "price": 150.00,
+      "material": "Gold",
+      "color": "Gold",
+      "brand": "Brand M",
+      "description": "Elegant gold necklace perfect for special occasions.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 50,
+      "reviews": [
+        {"user": "JewelryLover", "rating": 5, "comment": "Beautiful and well-crafted."},
+        {"user": "FancyNancy", "rating": 4, "comment": "Very nice but a bit delicate."}
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Silver Bracelet",
+      "category": "Jewellery",
+      "price": 60.00,
+      "material": "Silver",
+      "color": "Silver",
+      "brand": "Brand N",
+      "description": "Chic silver bracelet with a sleek design.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 100,
+      "reviews": [
+        {"user": "BraceletFan", "rating": 5, "comment": "Love the design and fit."},
+        {"user": "AccessoryQueen", "rating": 4, "comment": "Very pretty but could be sturdier."}
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Diamond Earrings",
+      "category": "Jewellery",
+      "price": 200.00,
+      "material": "Diamond",
+      "color": "Clear",
+      "brand": "Brand O",
+      "description": "Stunning diamond earrings perfect for any occasion.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 40,
+      "reviews": [
+        {"user": "DiamondFan", "rating": 5, "comment": "Absolutely beautiful and elegant."},
+        {"user": "ClassyLady", "rating": 4, "comment": "Gorgeous but a bit expensive."}
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Leather Wallet",
+      "category": "Accessories",
+      "price": 45.00,
+      "material": "Leather",
+      "color": ["Black", "Brown"],
+      "brand": "Brand P",
+      "description": "Classic leather wallet with multiple card slots.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 150,
+      "reviews": [
+        {"user": "WalletGuy", "rating": 5, "comment": "Great quality and very functional."},
+        {"user": "PracticalJoe", "rating": 4, "comment": "Nice wallet but a bit bulky."}
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Sunglasses",
+      "category": "Accessories",
+      "price": 30.00,
+      "material": "Plastic",
+      "color": ["Black", "Brown"],
+      "brand": "Brand Q",
+      "description": "Stylish sunglasses with UV protection.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 120,
+      "reviews": [
+        {"user": "SunnyDay", "rating": 5, "comment": "Very stylish and good protection."},
+        {"user": "BeachLover", "rating": 4, "comment": "Great sunglasses but frame feels a bit flimsy."}
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Watch",
+      "category": "Accessories",
+      "price": 150.00,
+      "material": "Stainless Steel",
+      "color": ["Silver", "Gold"],
+      "brand": "Brand R",
+      "description": "Elegant stainless steel watch with a sleek design.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 70,
+      "reviews": [
+        {"user": "TimeKeeper", "rating": 5, "comment": "Beautiful watch and keeps perfect time."},
+        {"user": "StyleGuru", "rating": 4, "comment": "Very stylish but a bit heavy."}
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Men's Winter Coat",
+      "category": "Outwear",
+      "price": 180.00,
+      "size": ["M", "L", "XL"],
+      "color": ["Black", "Navy"],
+      "material": "Wool",
+      "brand": "Brand S",
+      "description": "Warm and stylish wool coat for winter.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 50,
+      "reviews": [
+        {"user": "WinterFan", "rating": 5, "comment": "Very warm and looks great."},
+        {"user": "ColdGuy", "rating": 4, "comment": "Nice coat but a bit heavy."}
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Women's Trench Coat",
+      "category": "Outwear",
+      "price": 130.00,
+      "size": ["S", "M", "L"],
+      "color": ["Beige", "Black"],
+      "material": "Cotton Blend",
+      "brand": "Brand T",
+      "description": "Classic trench coat with a modern twist.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 60,
+      "reviews": [
+        {"user": "TrenchFan", "rating": 5, "comment": "Love the fit and style."},
+        {"user": "StylishLady", "rating": 4, "comment": "Great coat but not very warm."}
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Unisex Rain Jacket",
+      "category": "Outwear",
+      "price": 90.00,
+      "size": ["S", "M", "L", "XL"],
+      "color": ["Yellow", "Green"],
+      "material": "Polyester",
+      "brand": "Brand U",
+      "description": "Lightweight and waterproof rain jacket for all seasons.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 100,
+      "reviews": [
+        {"user": "RainLover", "rating": 5, "comment": "Perfect for rainy days."},
+        {"user": "OutdoorFan", "rating": 4, "comment": "Good jacket but a bit tight around the shoulders."}
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Camping Tent",
+      "category": "Outdoor",
+      "price": 200.00,
+      "size": "4 Person",
+      "color": ["Green", "Blue"],
+      "material": "Nylon",
+      "brand": "Brand V",
+      "description": "Durable 4-person camping tent with easy setup.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 30,
+      "reviews": [
+        {"user": "Camper123", "rating": 5, "comment": "Great tent, very spacious and easy to set up."},
+        {"user": "NatureLover", "rating": 4, "comment": "Good tent but a bit heavy."}
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Hiking Backpack",
+      "category": "Outdoor",
+      "price": 80.00,
+      "size": "50L",
+      "color": ["Black", "Grey"],
+      "material": "Polyester",
+      "brand": "Brand W",
+      "description": "Sturdy and comfortable hiking backpack with multiple compartments.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 80,
+      "reviews": [
+        {"user": "HikerGuy", "rating": 5, "comment": "Perfect for long hikes, very comfortable."},
+        {"user": "BackpackFan", "rating": 4, "comment": "Good backpack but could use more padding."}
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Sleeping Bag",
+      "category": "Outdoor",
+      "price": 60.00,
+      "size": "Single",
+      "color": ["Blue", "Red"],
+      "material": "Synthetic",
+      "brand": "Brand X",
+      "description": "Warm and lightweight sleeping bag for camping.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 100,
+      "reviews": [
+        {"user": "CampFan", "rating": 5, "comment": "Very warm and comfortable."},
+        {"user": "OutdoorFan", "rating": 4, "comment": "Good sleeping bag but a bit bulky."}
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Men's Sports T-Shirt",
+      "category": "Sportswear",
+      "price": 25.00,
+      "size": ["S", "M", "L", "XL"],
+      "color": ["Red", "Blue", "Black"],
+      "material": "Polyester",
+      "brand": "Brand Y",
+      "description": "Breathable sports t-shirt for active wear.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 150,
+      "reviews": [
+        {"user": "ActiveGuy", "rating": 5, "comment": "Great for workouts, very breathable."},
+        {"user": "FitFan", "rating": 4, "comment": "Good shirt but fabric is a bit thin."}
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Women's Yoga Pants",
+      "category": "Sportswear",
+      "price": 30.00,
+      "size": ["S", "M", "L"],
+      "color": ["Black", "Grey"],
+      "material": "Spandex",
+      "brand": "Brand Z",
+      "description": "Comfortable and flexible yoga pants for active wear.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 100,
+      "reviews": [
+        {"user": "YogaFan", "rating": 5, "comment": "Perfect for yoga, very comfortable."},
+        {"user": "ActiveMom", "rating": 4, "comment": "Good pants but waistband is a bit tight."}
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Men's Running Shorts",
+      "category": "Sportswear",
+      "price": 20.00,
+      "size": ["M", "L", "XL"],
+      "color": ["Black", "Blue"],
+      "material": "Polyester",
+      "brand": "Brand AA",
+      "description": "Lightweight and breathable running shorts.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 120,
+      "reviews": [
+        {"user": "Runner123", "rating": 5, "comment": "Very comfortable and light."},
+        {"user": "SportyGuy", "rating": 4, "comment": "Good shorts but could use more pockets."}
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Women's Sports Bra",
+      "category": "Sportswear",
+      "price": 25.00,
+      "size": ["S", "M", "L"],
+      "color": ["Black", "White"],
+      "material": "Spandex",
+      "brand": "Brand BB",
+      "description": "Supportive and comfortable sports bra for active wear.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 100,
+      "reviews": [
+        {"user": "FitnessFan", "rating": 5, "comment": "Great support and very comfortable."},
+        {"user": "GymGirl", "rating": 4, "comment": "Good bra but straps are a bit tight."}
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Men's Training Jacket",
+      "category": "Sportswear",
+      "price": 50.00,
+      "size": ["M", "L", "XL"],
+      "color": ["Black", "Red"],
+      "material": "Polyester",
+      "brand": "Brand CC",
+      "description": "Lightweight training jacket for all seasons.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 70,
+      "reviews": [
+        {"user": "TrainerGuy", "rating": 5, "comment": "Perfect for workouts, very comfortable."},
+        {"user": "FitFan", "rating": 4, "comment": "Good jacket but a bit tight around the shoulders."}
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Women's Running Capris",
+      "category": "Sportswear",
+      "price": 35.00,
+      "size": ["S", "M", "L"],
+      "color": ["Black", "Blue"],
+      "material": "Polyester",
+      "brand": "Brand DD",
+      "description": "Comfortable and flexible running capris for active wear.",
+      "stock_status": "In Stock",
+      "cart_status": "Not in Cart",
+      "quantity": 90,
+      "reviews": [
+        {"user": "RunnerGirl", "rating": 5, "comment": "Great fit and very comfortable."},
+        {"user": "ActiveMom", "rating": 4, "comment": "Good capris but waistband is a bit tight."}
+      ]
+    }
+  ]
+}

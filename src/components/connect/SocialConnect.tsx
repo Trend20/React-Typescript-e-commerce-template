@@ -1,7 +1,7 @@
 import { FaPhone } from 'react-icons/fa'
 import { FiSend } from 'react-icons/fi'
 import { MdEmail } from 'react-icons/md'
-import { type Connect } from '../../types/connect.model'
+import { type Connect } from '../../types/connect'
 
 const connectData: Connect[] = [
   {
