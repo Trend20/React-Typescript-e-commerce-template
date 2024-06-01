@@ -18,9 +18,37 @@ import Mens from './components/category/mens/Mens'
 import Outdoor from './components/category/outdoor/Outdoor'
 import Home from './pages/home/Home'
 import ProductDetails from "./pages/products/ProductDetails";
+import {useDispatch} from "react-redux";
+import axios from "axios";
+import {fetchAllProducts} from "./features/slices/productSlice";
 
 const App:FC = () => {
 
+  const [products, setProducts] = useState<any[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<null | any >(null);
+  const dispatch = useDispatch();
+  //   fetch products
+  useEffect(() =>{
+    const getAllProducts = async () => {
+      try{
+        const results = await axios.get('/products.json');
+        // console.log(results);
+        if(results.statusText !== 'OK'){
+          setLoading(false);
+        }
+        const data = await results.data;
+        // console.log('data....', data)
+        setProducts(data.products);
+        dispatch(fetchAllProducts(data.products))
+        setLoading(false);
+      }catch (error){
+        setError(error);
+        setLoading(false);
+      }
+    }
+    getAllProducts();
+  },[])
 
   return (
     <BrowserRouter>
@@ -33,7 +61,7 @@ const App:FC = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/reset-password" element={<Contact />} />
-            <Route path="/products" element={<Products />} />
+            <Route path="/products" element={<Products loading={loading} error={error} products={products} />} />
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/contacts" element={<Contact />} />
             <Route path="/store/category/accessories" element={<Accessories />} />
