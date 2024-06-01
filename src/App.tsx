@@ -40,8 +40,6 @@ const App = (): JSX.Element => {
             <Route path="/store/category/outware" element={<Outware />} />
             <Route path="/store/category/jewelry" element={<Jewelry />} />
             <Route path="/store/category/sportsware" element={<Sportsware />} />
-            {/* <Route path="/blog" element={<Products />} /> */}
-            {/* <Route path="/blog" element={<Products />} /> */}
           </Routes>
         </div>
         <Footer />
