@@ -1,18 +1,16 @@
+import {FC} from "react";
 import { popularProducts, type Product } from '../../assets/data/popular'
+import SingleProduct from "./Product";
 
-const PopularProducts = (): JSX.Element => {
+const PopularProducts:FC = () => {
   return (
         <div className='popular-products'>
             <h1>Popular Products</h1>
             <div className="product-items">
                 {
-                    popularProducts.map((item: Product) => {
+                    popularProducts.map((product: Product) => {
                       return (
-                            <div className='product-item' key={item.id}>
-                                <img src={item.img} alt={item.description}/>
-                                <p>{item.description}</p>
-                                <h6><strong>{item.price}</strong></h6>
-                            </div>
+                            <SingleProduct key={product.id} product={product} />
                       )
                     })
                 }

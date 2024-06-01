@@ -1,40 +1,40 @@
-import { useState } from 'react'
-import { type NavigateFunction, useNavigate } from 'react-router-dom'
+import {Link, type NavigateFunction, useNavigate} from 'react-router-dom'
+import {FC} from "react";
 
-const Hero = (): JSX.Element => {
+const Hero:FC = () => {
   const navigate: NavigateFunction = useNavigate()
   return (
         <div className='hero'>
             <div className="top-content">
-                <div className="new">
+                <Link to="/products" className="new">
                     <h1>Sale</h1>
                     <h3>GET UP TO 25% OFF</h3>
                     <button onClick={() => { navigate('/accessories') }}>shop now</button>
-                </div>
+                </Link>
                 <div className="collection">
-                    <div className="collection-item" id='women'>
+                    <Link to="/store/category/womans" className="collection-item" id='women'>
                         <h5>New arrivals</h5>
                         <h3>women's</h3>
-                    </div>
-                    <div className="collection-item" id='men'>
+                    </Link>
+                    <Link to="/store/category/mens" className="collection-item" id='men'>
                         <h5>New arrivals</h5>
                         <h3>men's</h3>
-                    </div>
+                    </Link>
                 </div>
             </div>
             <div className="bottom-content">
-                <div className="sale">
+                <Link to="/footwear" className="sale">
                     <h1>Sale</h1>
                     <p>Get upto 50% off</p>
-                </div>
-                <div className="free">
+                </Link>
+                <Link to="/footwear" className="free">
                     <p>buy 2 items</p>
                     <h1>get one for free</h1>
-                </div>
-                <div className="footwear">
+                </Link>
+                <Link to="/store/category/footware" className="footwear">
                     <p>new arrivals</p>
                     <h1>footwear</h1>
-                </div>
+                </Link>
             </div>
         </div>
   )

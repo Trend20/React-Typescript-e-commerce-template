@@ -1,5 +1,5 @@
 import Hero from './Hero'
-import './Home.css'
+import './styles/Home.css'
 import Brands from './Brands'
 import PopularProducts from './PopularProducts'
 import Deals from './Deals'
