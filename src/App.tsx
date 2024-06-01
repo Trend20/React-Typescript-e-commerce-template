@@ -24,7 +24,7 @@ const App = (): JSX.Element => {
       <div className="app">
         <Navbar />
         <Category />
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen px-60 py-10">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
