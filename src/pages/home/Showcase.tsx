@@ -49,7 +49,7 @@ const Showcase:FC = () => {
             {
                 images.map((img: Img) => {
                   return (
-                        <div className="img cursor-pointer">
+                        <div key={img.id} className="img cursor-pointer">
                             <img src={img.imgUrl} alt={img.alt}/>
                         </div>
                   )

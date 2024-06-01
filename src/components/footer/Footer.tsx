@@ -14,7 +14,7 @@ const Footer = (): JSX.Element => {
           {
               information.map((info) => {
                 return (
-                      <Link to={info.link} className='footer-link'>{info.title}</Link>
+                      <Link key={info.id} to={info.link} className='footer-link'>{info.title}</Link>
                 )
               })
           }

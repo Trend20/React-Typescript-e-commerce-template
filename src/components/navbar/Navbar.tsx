@@ -15,7 +15,7 @@ const Navbar: FC = () => {
       <div className="nav-links">
           {
             navData.map((item) => (
-              <ul>
+              <ul key={item.id}>
                 <Link to={item.url} className='navLinkItem'>{item.name}</Link>
               </ul>
             ))
