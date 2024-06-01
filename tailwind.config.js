@@ -4,6 +4,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      satoshi: ["Satoshi", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],

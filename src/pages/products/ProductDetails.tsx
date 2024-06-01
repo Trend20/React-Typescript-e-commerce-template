@@ -1,6 +1,7 @@
 import {FC, useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import axios from "axios";
+import AddToCart from "../../components/AddToCart";
 
 const ProductDetails:FC = () => {
     const { id } = useParams();
@@ -35,25 +36,31 @@ const ProductDetails:FC = () => {
     if (!product) return <p>Product not found</p>;
 
     return(
-        <div>
-            <h3>Product Details</h3>
-            <h1>{product.name}</h1>
-            <p>{product.description}</p>
-            <p>Price: ${product.price}</p>
-            <p>Category: {product.category}</p>
-            <p>Stock Status: {product.stock_status}</p>
-            <p>Cart Status: {product.cart_status}</p>
-            <p>Quantity: {product.quantity}</p>
-            <h3>Reviews:</h3>
-            <ul>
-                {product.reviews.map((review:any, index:any) => (
-                    <li key={index}>
-                        <p>User: {review.user}</p>
-                        <p>Rating: {review.rating}</p>
-                        <p>Comment: {review.comment}</p>
-                    </li>
-                ))}
-            </ul>
+        <div className="flex">
+            <div>
+                <img src={product.img} alt={product.name}/>
+            </div>
+            <div>
+                <h1>{product.name}</h1>
+                <p>${product.price}</p>
+                <hr/>
+                <p>{product.description}</p>
+                <p>Category: {product.category}</p>
+                <p>Stock Status: {product.stock_status}</p>
+                <p>Cart Status: {product.cart_status}</p>
+                <p>Quantity: {product.quantity}</p>
+                <h3>Reviews:</h3>
+                <ul>
+                    {product.reviews.map((review: any, index: any) => (
+                        <li key={index}>
+                            <p>User: {review.user}</p>
+                            <p>Rating: {review.rating}</p>
+                            <p>Comment: {review.comment}</p>
+                        </li>
+                    ))}
+                </ul>
+                <AddToCart/>
+            </div>
         </div>
     )
 }

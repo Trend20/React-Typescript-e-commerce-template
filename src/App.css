@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ysabeau SC', sans-serif;
+  /*font-family: 'Ysabeau SC', sans-serif;*/
 }
 
 .app{
@@ -30,6 +30,8 @@
   line-height: 1;
   letter-spacing: 8px;
   font-size: 52px;
+  color: #023047;
+  text-transform: uppercase;
 }
 
 .nav-action{
@@ -100,7 +102,7 @@
 
 /*footer */
 .footer{
-  background: #262626;
+  background: #023047;
   padding: 70px 250px;
   display: flex;
   justify-content: space-between;
@@ -203,7 +205,7 @@
   cursor: pointer;
   padding: 15px;
   color: #fff;
-  background: #000;
+  background: #023047;
   border: none;
 }
 /* REGULAR STYLES */

@@ -55,7 +55,7 @@ const categories: Categories[] = [
 const Category = (): JSX.Element => {
   const navigate: NavigateFunction = useNavigate()
   return (
-        <div className='category'>
+        <div className='category bg-[#023047]'>
             <div className="category-links">
                 {
                     categories.map((category: Categories) => {

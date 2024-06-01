@@ -3,6 +3,7 @@
     width: 100%;
     flex-direction: column;
     padding: 15px 0;
+    text-transform: uppercase;
 }
 
 .top-content{
@@ -40,7 +41,7 @@
     outline: none;
     border: none;
     color: #fff;
-    background: #262626;
+    background: #023047;
     padding: 15px;
     font-size: 24px;
     cursor: pointer;
@@ -53,7 +54,7 @@
 }
 
 .new button:hover{
-    background: #000;
+    background: #023047;
 }
 
 .collection{
@@ -77,6 +78,7 @@
 #men h5{
     font-weight: 200;
     font-size: 20px;
+    color: #023047;
 }
 
 #women h3,
@@ -85,6 +87,8 @@
     font-size: 52px;
     line-height: 1;
     letter-spacing: 3px;
+    color: #023047;
+    text-transform: uppercase;
 }
 
 #men{
@@ -145,10 +149,11 @@
 
 .free h1{
     font-weight: 700;
-    font-size: 45px;
+    font-size: 35px;
     line-height: 1;
     letter-spacing: 3px;
     color: #fff;
+    text-transform: uppercase;
 }
 
 
@@ -171,6 +176,8 @@
     font-size: 45px;
     line-height: 1;
     letter-spacing: 3px;
+    color: #023047;
+    text-transform: uppercase;
 }
 
 .brands{
@@ -367,7 +374,7 @@
     }
 
     .new button:hover{
-        background: #000;
+        background: #023047;
     }
 
     .collection{
