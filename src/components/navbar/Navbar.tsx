@@ -10,15 +10,15 @@ const Navbar: FC = () => {
       <div className="logo">
         <h1 onClick={() => { navigate('/') }}>Mode</h1>
       </div>
-      <div className="nav-links">
-          {
-            navData.map((item) => (
-              <ul key={item.id}>
-                <Link to={item.url} className='navLinkItem'>{item.name}</Link>
-              </ul>
-            ))
-          }
-      </div>
+        <div className="nav-links">
+            <ul>
+                {
+                    navData.map((item) => (
+                        <Link key={item.id} to={item.url} className='navLinkItem'>{item.name}</Link>
+                    ))
+                }
+            </ul>
+        </div>
         <div className="nav-action cursor-pointer">
             <p onClick={() => { navigate('/cart') }}><i><FaShoppingCart fill="#023047"/></i></p>
             <p onClick={() => { navigate('/comparison') }}><i><FaBalanceScale fill="#023047"/></i></p>
