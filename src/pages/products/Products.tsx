@@ -1,7 +1,8 @@
 import React, {FC} from 'react'
 import {Product} from "../../types/product";
 import SingleProduct from "./SingleProduct";
-import AddToCart from "../../components/AddToCart";
+import {useDispatch} from "react-redux";
+import {addItemToCart} from "../../features/slices/cartSlice";
 
 interface ProductsProps {
     loading: boolean;
@@ -10,6 +11,10 @@ interface ProductsProps {
 }
 
 const Products:FC<ProductsProps> = ({loading, error, products}) => {
+    const dispatch = useDispatch();
+    const handleAddToCart = (product:any) => {
+        dispatch(addItemToCart(product));
+    };
 
     if(loading) return <p>Loading...</p>;
     if(error) return <p>Error: {error.message}</p>;
@@ -19,7 +24,7 @@ const Products:FC<ProductsProps> = ({loading, error, products}) => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
             {
                 products.map((product: Product) => (
-                    <SingleProduct key={product.id} product={product} />
+                    <SingleProduct key={product.id} product={product} addToCart={handleAddToCart} />
                 ))
             }
         </div>

@@ -13,7 +13,7 @@ interface InitialState {
 
 const initialState: InitialState = {
   items: [],
-  isEmpty: false
+  isEmpty: true
 }
 
 const cartSlice = createSlice({
@@ -21,7 +21,8 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addItemToCart: (state: InitialState, action: { payload: any, type: string }): void => {
-      state.items = action.payload;
+      state.items.push(action.payload);
+      state.isEmpty = false
     }
   }
 })
