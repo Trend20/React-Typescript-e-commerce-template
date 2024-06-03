@@ -1,27 +1,17 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-interface Product {
-  name: string
-  quantity: number
-  category: string
-  isSold: boolean
-  inCart: boolean
-}
-
 interface InitialState {
-  products: Product[]
-  product: Product
+  products: any[]
+  product: null
+  isSold: boolean,
+  inCart: boolean
 }
 
 const initialState: InitialState = {
   products: [],
-  product: {
-    name: '',
-    quantity: 0,
-    category: '',
-    isSold: false,
-    inCart: false
-  }
+  product: null,
+  isSold: false,
+  inCart: false
 }
 
 const productSlice = createSlice({
@@ -30,9 +20,14 @@ const productSlice = createSlice({
   reducers: {
     fetchAllProducts: (state: InitialState, action: { payload: any, type: string }): void => {
       state.products = action.payload
-    }
+    },
+    addProductToCart: (state: InitialState, action: { payload: any, type: string }): void => {
+      state.products.push(action.payload);
+      state.product = action.payload;
+      state.inCart = true;
+    },
   }
 })
 
-export const {fetchAllProducts} = productSlice.actions
+export const {fetchAllProducts, addProductToCart} = productSlice.actions
 export default productSlice.reducer

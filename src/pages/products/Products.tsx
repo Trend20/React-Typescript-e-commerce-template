@@ -3,6 +3,7 @@ import {Product} from "../../types/product";
 import SingleProduct from "./SingleProduct";
 import {useDispatch} from "react-redux";
 import {addItemToCart} from "../../features/slices/cartSlice";
+import {addProductToCart} from "../../features/slices/productSlice";
 
 interface ProductsProps {
     loading: boolean;
@@ -13,7 +14,11 @@ interface ProductsProps {
 const Products:FC<ProductsProps> = ({loading, error, products}) => {
     const dispatch = useDispatch();
     const handleAddToCart = (product:any) => {
-        dispatch(addItemToCart(product));
+        if(product){
+            const productWithCartStatus = { ...product, cart_status: 'in cart' };
+            dispatch(addItemToCart(productWithCartStatus));
+            dispatch(addProductToCart(productWithCartStatus));
+        }
     };
 
     if(loading) return <p>Loading...</p>;
