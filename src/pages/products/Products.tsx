@@ -1,6 +1,7 @@
 import React, {FC} from 'react'
 import {Product} from "../../types/product";
 import SingleProduct from "./SingleProduct";
+import AddToCart from "../../components/AddToCart";
 
 interface ProductsProps {
     loading: boolean;
