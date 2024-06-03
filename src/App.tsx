@@ -21,6 +21,7 @@ import ProductDetails from "./pages/products/ProductDetails";
 import {useDispatch} from "react-redux";
 import axios from "axios";
 import {fetchAllProducts} from "./features/slices/productSlice";
+import CartPage from "./pages/cart/Cart";
 
 const App:FC = () => {
 
@@ -64,6 +65,7 @@ const App:FC = () => {
             <Route path="/products" element={<Products loading={loading} error={error} products={products} />} />
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/contacts" element={<Contact />} />
+            <Route path="/cart" element={<CartPage />} />
             <Route path="/store/category/accessories" element={<Accessories />} />
             <Route path="/store/category/outdoor" element={<Outdoor />} />
             <Route path="/store/category/mens" element={<Mens />} />
