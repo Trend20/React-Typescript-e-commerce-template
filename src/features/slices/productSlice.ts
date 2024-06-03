@@ -4,14 +4,12 @@ interface InitialState {
   products: any[]
   product: null
   isSold: boolean,
-  inCart: boolean
 }
 
 const initialState: InitialState = {
   products: [],
   product: null,
   isSold: false,
-  inCart: false
 }
 
 const productSlice = createSlice({
@@ -22,9 +20,10 @@ const productSlice = createSlice({
       state.products = action.payload
     },
     addProductToCart: (state: InitialState, action: { payload: any, type: string }): void => {
+      // const product = action.payload;
+      // product.cart_status = 'in cart';
       state.products.push(action.payload);
       state.product = action.payload;
-      state.inCart = true;
     },
   }
 })

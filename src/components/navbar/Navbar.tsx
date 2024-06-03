@@ -7,7 +7,6 @@ import {useSelector} from "react-redux";
 const Navbar: FC = () => {
     const navigate: NavigateFunction = useNavigate()
     const {items} = useSelector((store:any) => store.cart);
-    console.log('cart items....', items);
   return (
     <div className='navbar'>
       <div className="logo">
