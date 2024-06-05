@@ -1,9 +1,12 @@
 import {FC} from "react";
+import {useDispatch} from "react-redux";
+import {removeItemFromCart} from "../../features/slices/cartSlice";
 
 interface CartItemProps{
     item:any;
 }
 const CartItem:FC<CartItemProps> = ({item}) =>{
+    const dispatch = useDispatch()
     return(
         <div>
             <li className="flex items-center gap-4">
@@ -32,7 +35,6 @@ const CartItem:FC<CartItemProps> = ({item}) =>{
                 <div className="flex flex-1 items-center justify-end gap-2">
                     <form>
                         <label htmlFor="Line3Qty" className="sr-only"> Quantity </label>
-
                         <input
                             type="number"
                             min="1"
@@ -42,7 +44,7 @@ const CartItem:FC<CartItemProps> = ({item}) =>{
                         />
                     </form>
 
-                    <button className="text-gray-600 transition hover:text-red-600">
+                    <button onClick={() => dispatch(removeItemFromCart(item))} className="text-gray-600 transition hover:text-red-600">
                         <span className="sr-only">Remove item</span>
 
                         <svg
