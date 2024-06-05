@@ -28,28 +28,39 @@ const App:FC = () => {
   const [products, setProducts] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<null | any >(null);
+  const [page, setPage] = useState<number>(1);
+  const [hasMore, setHasMore] = useState<boolean>(true);
   const dispatch = useDispatch();
   //   fetch products
-  useEffect(() =>{
-    const getAllProducts = async () => {
-      try{
-        const results = await axios.get('/products.json');
-        // console.log(results);
-        if(results.statusText !== 'OK'){
-          setLoading(false);
-        }
-        const data = await results.data;
-        // console.log('data....', data)
-        setProducts(data.products);
-        dispatch(fetchAllProducts(data.products))
-        setLoading(false);
-      }catch (error){
-        setError(error);
+  const getAllProducts = async (page: number) => {
+    try{
+      const results = await axios.get(`/products.json?page=${page}`);
+      if(results.statusText !== 'OK'){
         setLoading(false);
       }
+      const data = await results.data;
+      if (data.products.length === 0) {
+        setHasMore(false); // No more products to load
+      } else {
+        setProducts(prevProducts => [...prevProducts, ...data.products]);
+        dispatch(fetchAllProducts([...products, ...data.products]));
+      }
+      setLoading(false);
+    }catch (error){
+      setError(error);
+      setLoading(false);
     }
-    getAllProducts();
+  }
+
+  useEffect(() =>{
+    getAllProducts(1);
   },[])
+
+  const fetchMoreData = async () => {
+    const nextPage = page + 1;
+    await getAllProducts(nextPage);
+    setPage(nextPage);
+  };
 
   return (
     <BrowserRouter>
@@ -62,7 +73,7 @@ const App:FC = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/reset-password" element={<Contact />} />
-            <Route path="/products" element={<Products loading={loading} error={error} products={products} />} />
+            <Route path="/products" element={<Products getAllProducts={fetchMoreData} hasMore={hasMore} loading={loading} error={error} products={products} />} />
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/contacts" element={<Contact />} />
             <Route path="/cart" element={<CartPage />} />
