@@ -9,8 +9,6 @@ interface SingleProductProps {
 }
 
 const SingleProduct:FC<SingleProductProps> = ({product,addToCart}) =>{
-    const status = product.cart_status;
-    console.log(product, status);
     return (
         <div className="flex flex-col justify-start space-y-2">
             <Link to={`/product/${product.id}`} className='product-item' key={product.id}>

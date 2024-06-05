@@ -1,7 +1,7 @@
 import {FC, useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import axios from "axios";
-import AddToCart from "../../components/AddToCart";
+import AddToCart from "../../components/common/AddToCart";
 
 const ProductDetails:FC = () => {
     const { id } = useParams();
