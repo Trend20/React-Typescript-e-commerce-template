@@ -1,14 +1,19 @@
-import { onsaleProducts } from '../../assets/data/popular'
 import {FC} from "react";
 import {Product} from "../../types/product";
 import SingleProduct from "../products/SingleProduct";
-import {addItemToCart} from "../../features/slices/cartSlice";
-import {useDispatch} from "react-redux";
+import {addItemToCart, removeItemFromCart} from "../../features/slices/cartSlice";
+import {useDispatch, useSelector} from "react-redux";
 
 const ProductsOnSale:FC = () => {
+    const { products} = useSelector((store:any)  => store.products);
+    const onsaleProducts = products.slice(0, 3)
     const dispatch = useDispatch();
     const handleAddToCart = (product:any) => {
         dispatch(addItemToCart(product));
+    };
+
+    const handleRemoveFromCart = (product:any) => {
+        dispatch(removeItemFromCart(product));
     };
   return (
         <div className='onsale-products'>
@@ -17,7 +22,7 @@ const ProductsOnSale:FC = () => {
                 {
                     onsaleProducts.map((item: Product) => {
                       return (
-                            <SingleProduct key={item.id} product={item} addToCart={handleAddToCart}/>
+                            <SingleProduct key={item.id} product={item} addToCart={handleAddToCart} removeFromCart={handleRemoveFromCart}/>
                       )
                     })
                 }
