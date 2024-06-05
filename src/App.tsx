@@ -22,6 +22,7 @@ import {useDispatch} from "react-redux";
 import axios from "axios";
 import {fetchAllProducts} from "./features/slices/productSlice";
 import CartPage from "./pages/cart/Cart";
+import Toast from "./components/common/Toast";
 
 const App:FC = () => {
 
@@ -67,6 +68,7 @@ const App:FC = () => {
       <div className="app">
         <Navbar />
         <Category />
+        <Toast />
         <div className="flex flex-col min-h-screen px-60 py-10">
           <Routes>
             <Route path="/" element={<Home />} />

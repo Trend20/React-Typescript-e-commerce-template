@@ -16,11 +16,11 @@ const SingleProduct:FC<SingleProductProps> = ({product,addToCart}) =>{
                 <p>{product.description}</p>
                 <h6><strong>${product.price}</strong></h6>
             </Link>
-                    <button onClick={() => addToCart(product)}
-                            className="flex bg-[#023047] p-3 text-white space-x-3 justify-center items-center w-36">
-                        <FaCartPlus/>
-                        <span>Add To Cart</span>
-                    </button>
+            <button onClick={() => addToCart(product)}
+                    className="flex bg-[#023047] p-3 text-white space-x-3 justify-center items-center w-36">
+                <FaCartPlus/>
+                <span>Add To Cart</span>
+            </button>
         </div>
     )
 }

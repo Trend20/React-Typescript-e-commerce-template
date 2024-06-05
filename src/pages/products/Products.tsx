@@ -6,6 +6,7 @@ import {addItemToCart} from "../../features/slices/cartSlice";
 import {addProductToCart} from "../../features/slices/productSlice";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Loader from "../../components/common/Loader";
+import {showToast} from "../../components/common/Toast";
 
 interface ProductsProps {
     loading: boolean;
@@ -19,6 +20,7 @@ const Products:FC<ProductsProps> = ({loading, hasMore, error, products, getAllPr
     const dispatch = useDispatch();
     const handleAddToCart = (product:any) => {
         if(product){
+            showToast('Product added successfully', 'success');
             const productWithCartStatus = { ...product, cart_status: 'in cart' };
             dispatch(addItemToCart(productWithCartStatus));
             dispatch(addProductToCart(productWithCartStatus));
