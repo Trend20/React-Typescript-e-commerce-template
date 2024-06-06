@@ -6,7 +6,7 @@ import {useDispatch, useSelector} from "react-redux";
 
 const ProductsOnSale:FC = () => {
     const { products} = useSelector((store:any)  => store.products);
-    const onsaleProducts = products.slice(0, 3)
+    const onsaleProducts = products.slice(4, 7)
     const dispatch = useDispatch();
     const handleAddToCart = (product:any) => {
         dispatch(addItemToCart(product));

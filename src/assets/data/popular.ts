@@ -1,8 +1,8 @@
-import popularOne from '../img/popular1.jpg'
-import popularTwo from '../img/popular2.jpg'
-import popularThree from '../img/popular3.jpg'
-import onsaleOne from '../img/onsale1.jpg'
-import onsaleTwo from '../img/onsale2.jpg'
+import popularOne from '../../../public/img/popular1.jpg'
+import popularTwo from '../../../public/img/popular2.jpg'
+import popularThree from '../../../public/img/popular3.jpg'
+import onsaleOne from '../../../public/img/onsale1.jpg'
+import onsaleTwo from '../../../public/img/onsale2.jpg'
 import {Product} from "../../types/product";
 
 // popular
