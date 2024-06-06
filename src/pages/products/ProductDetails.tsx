@@ -2,14 +2,19 @@ import {FC, useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import axios from "axios";
 import AddToCart from "../../components/common/AddToCart";
+import {useDispatch, useSelector} from "react-redux";
+import RemoveFromCart from "../../components/common/RemoveFromCart";
+import {addItemToCart, removeItemFromCart} from "../../features/slices/cartSlice";
 
 const ProductDetails:FC = () => {
     const { id } = useParams();
     const[product, setProduct] = useState<null | any>(null)
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<null | any>(null);
+    const dispatch = useDispatch()
 
-    console.log('my product id:...', id);
+    const {items} = useSelector((store:any) => store.cart)
+    const isInCart = items.find((item:any) => item.id === product.id);
 
     // get each product based on ID
     useEffect(() => {
@@ -59,7 +64,11 @@ const ProductDetails:FC = () => {
                         </li>
                     ))}
                 </ul>
-                <AddToCart/>
+                {
+                    !isInCart ? <AddToCart clickHandler={() => dispatch(addItemToCart(product))} />
+                        :
+                        <RemoveFromCart clickHandler={() => dispatch(removeItemFromCart(product))}/>
+                }
             </div>
         </div>
     )

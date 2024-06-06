@@ -1,7 +1,8 @@
 import {FC} from "react";
 import {Link} from "react-router-dom";
-import {FaCartPlus} from "react-icons/fa";
 import {useSelector} from "react-redux";
+import AddToCart from "../../components/common/AddToCart";
+import RemoveFromCart from "../../components/common/RemoveFromCart";
 
 
 interface SingleProductProps {
@@ -21,16 +22,9 @@ const SingleProduct:FC<SingleProductProps> = ({product,addToCart, removeFromCart
                 <h6><strong>${product.price}</strong></h6>
             </Link>
             {
-                !isInCart ? <button onClick={() => addToCart(product)}
-                                    className="flex bg-[#023047] p-3 text-white space-x-3 justify-center items-center w-36">
-                        <FaCartPlus/>
-                        <span>Add To Cart</span>
-                    </button>
+                !isInCart ? <AddToCart clickHandler={() => addToCart(product)} />
                     :
-                    <button onClick={() => removeFromCart(product)}
-                            className="flex bg-[#023047] p-3 text-white space-x-3 justify-center items-center w-36">
-                        <span>Remove from Cart</span>
-                    </button>
+                    <RemoveFromCart clickHandler={() => removeFromCart(product)}/>
             }
         </div>
     )
