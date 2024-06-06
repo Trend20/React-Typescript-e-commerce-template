@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "img": "/img.png",
+      "img": "/img/men1.jpeg",
       "name": "Men's Classic T-Shirt",
       "category": "Men's Wear",
       "price": 20.99,
@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "img": "/img.png",
+      "img": "/img/men2.jpeg",
       "name": "Men's Slim Fit Jeans",
       "category": "Men's Wear",
       "price": 45.50,
@@ -40,7 +40,7 @@
     },
     {
       "id": 3,
-      "img": "/img.png",
+      "img": "/img/men3.jpeg",
       "name": "Men's Leather Jacket",
       "category": "Men's Wear",
       "price": 120.00,
@@ -59,7 +59,7 @@
     },
     {
       "id": 4,
-      "img": "/img.png",
+      "img": "/img/product.jpeg",
       "name": "Men's Casual Sneakers",
       "category": "Footwear",
       "price": 60.00,
@@ -78,7 +78,7 @@
     },
     {
       "id": 5,
-      "img": "/img.png",
+      "img": "/img/product2.jpeg",
       "name": "Men's Running Shoes",
       "category": "Footwear",
       "price": 85.00,
@@ -97,7 +97,7 @@
     },
     {
       "id": 6,
-      "img": "/img.png",
+      "img": "/img/men1.jpeg",
       "name": "Men's Dress Shoes",
       "category": "Footwear",
       "price": 95.00,
@@ -116,7 +116,7 @@
     },
     {
       "id": 7,
-      "img": "/img.png",
+      "img": "/img/female1.jpeg",
       "name": "Women's Summer Dress",
       "category": "Women's Wear",
       "price": 35.99,
@@ -135,7 +135,7 @@
     },
     {
       "id": 8,
-      "img": "/img.png",
+      "img": "/img/onsale1.jpg",
       "name": "Women's Skinny Jeans",
       "category": "Women's Wear",
       "price": 50.00,
@@ -154,7 +154,7 @@
     },
     {
       "id": 9,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Women's Blouse",
       "category": "Women's Wear",
       "price": 25.00,
@@ -173,7 +173,7 @@
     },
     {
       "id": 10,
-      "img": "/img.png",
+      "img": "/img/onsale2.jpg",
       "name": "Women's Heeled Sandals",
       "category": "Footwear",
       "price": 70.00,
@@ -192,7 +192,7 @@
     },
     {
       "id": 11,
-      "img": "/img.png",
+      "img": "/img/onsale2.jpg",
       "name": "Women's Running Shoes",
       "category": "Footwear",
       "price": 80.00,
@@ -211,7 +211,7 @@
     },
     {
       "id": 12,
-      "img": "/img.png",
+      "img": "/img/onsale2.jpg",
       "name": "Women's Ankle Boots",
       "category": "Footwear",
       "price": 110.00,
@@ -230,7 +230,7 @@
     },
     {
       "id": 13,
-      "img": "/img.png",
+      "img": "/img/jewellery1.jpeg",
       "name": "Gold Necklace",
       "category": "Jewellery",
       "price": 150.00,
@@ -248,7 +248,7 @@
     },
     {
       "id": 14,
-      "img": "/img.png",
+      "img": "/img/jewellery1.jpeg",
       "name": "Silver Bracelet",
       "category": "Jewellery",
       "price": 60.00,
@@ -266,7 +266,7 @@
     },
     {
       "id": 15,
-      "img": "/img.png",
+      "img": "/img/jewellery1.jpeg",
       "name": "Diamond Earrings",
       "category": "Jewellery",
       "price": 200.00,
@@ -284,7 +284,7 @@
     },
     {
       "id": 16,
-      "img": "/img.png",
+      "img": "/img/jewellery1.jpeg",
       "name": "Leather Wallet",
       "category": "Accessories",
       "price": 45.00,
@@ -302,7 +302,7 @@
     },
     {
       "id": 17,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Sunglasses",
       "category": "Accessories",
       "price": 30.00,
@@ -320,7 +320,7 @@
     },
     {
       "id": 18,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Watch",
       "category": "Accessories",
       "price": 150.00,
@@ -338,7 +338,7 @@
     },
     {
       "id": 19,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Men's Winter Coat",
       "category": "Outwear",
       "price": 180.00,
@@ -357,7 +357,7 @@
     },
     {
       "id": 20,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Women's Trench Coat",
       "category": "Outwear",
       "price": 130.00,
@@ -376,7 +376,7 @@
     },
     {
       "id": 21,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Unisex Rain Jacket",
       "category": "Outwear",
       "price": 90.00,
@@ -395,7 +395,7 @@
     },
     {
       "id": 22,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Camping Tent",
       "category": "Outdoor",
       "price": 200.00,
@@ -414,7 +414,7 @@
     },
     {
       "id": 23,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Hiking Backpack",
       "category": "Outdoor",
       "price": 80.00,
@@ -433,7 +433,7 @@
     },
     {
       "id": 24,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Sleeping Bag",
       "category": "Outdoor",
       "price": 60.00,
@@ -452,7 +452,7 @@
     },
     {
       "id": 25,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Men's Sports T-Shirt",
       "category": "Sportswear",
       "price": 25.00,
@@ -471,7 +471,7 @@
     },
     {
       "id": 26,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Women's Yoga Pants",
       "category": "Sportswear",
       "price": 30.00,
@@ -490,7 +490,7 @@
     },
     {
       "id": 27,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Men's Running Shorts",
       "category": "Sportswear",
       "price": 20.00,
@@ -509,7 +509,7 @@
     },
     {
       "id": 28,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Women's Sports Bra",
       "category": "Sportswear",
       "price": 25.00,
@@ -528,7 +528,7 @@
     },
     {
       "id": 29,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Men's Training Jacket",
       "category": "Sportswear",
       "price": 50.00,
@@ -547,7 +547,7 @@
     },
     {
       "id": 30,
-      "img": "/img.png",
+      "img": "/img/img.png",
       "name": "Women's Running Capris",
       "category": "Sportswear",
       "price": 35.00,
