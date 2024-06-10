@@ -23,7 +23,6 @@ const CartPage = () =>{
                                 ))
                             }
                         </ul>
-
                         <div className="mt-8 flex justify-end border-t border-gray-100 pt-8">
                             <div className="w-screen max-w-lg space-y-4">
                                 <SubTotal/>
