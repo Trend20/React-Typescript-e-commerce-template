@@ -10,7 +10,7 @@ const Navbar: FC = () => {
   return (
     <div className='navbar'>
       <div className="logo">
-        <h1 onClick={() => { navigate('/') }}>Mode</h1>
+        <h1 onClick={() => { navigate('/') }}>Vendre</h1>
       </div>
         <div className="nav-links">
             <ul>
