@@ -11,13 +11,15 @@ const CartItem:FC<CartItemProps> = ({item}) =>{
     const dispatch = useDispatch()
     return(
         <div>
-            <li className="flex items-center gap-4">
-                <img
-                    src={item.img}
-                    alt={item.name}
-                    className="size-16 rounded object-cover"
-                />
-                <div>
+            <li className="flex items-start gap-4 w-full">
+                <div className="flex w-1/4">
+                    <img
+                        src={item.img}
+                        alt={item.name}
+                        className="rounded object-cover"
+                    />
+                </div>
+                <div className="flex flex-col w-1/2">
                     <h3 className="text-sm text-gray-900">{item.name}</h3>
                     <dl className="mt-0.5 space-y-px text-[10px] text-gray-600">
                         <div>
