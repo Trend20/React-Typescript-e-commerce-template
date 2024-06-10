@@ -3,8 +3,8 @@ import {useParams} from "react-router-dom";
 import axios from "axios";
 import AddToCart from "../../components/common/AddToCart";
 import {useDispatch, useSelector} from "react-redux";
-import RemoveFromCart from "../../components/common/RemoveFromCart";
 import {addItemToCart, removeItemFromCart} from "../../features/slices/cartSlice";
+import RemoveFromCart from "../../components/common/RemoveFromCart";
 
 const ProductDetails:FC = () => {
     const { id } = useParams();
