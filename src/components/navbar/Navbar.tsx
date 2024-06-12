@@ -10,7 +10,9 @@ const Navbar: FC = () => {
   return (
     <div className='navbar'>
       <div className="logo">
-        <h1 onClick={() => { navigate('/') }}>Vendre</h1>
+          <Link to={'/'} className="flex">
+              <img src="/logo.png" alt="logo" className="w-24"/>
+          </Link>
       </div>
         <div className="nav-links">
             <ul>

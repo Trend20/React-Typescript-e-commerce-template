@@ -21,12 +21,12 @@ const CartItem:FC<CartItemProps> = ({item}) =>{
                 </div>
                 <div className="flex flex-col w-1/2">
                     <h3 className="text-sm text-gray-900">{item.name}</h3>
-                    <dl className="mt-0.5 space-y-px text-[10px] text-gray-600">
+                    <dl className="mt-0.5 space-y-3 text-[10px] text-gray-600">
                         <div>
-                            <Dropdown labelName={'Sizes:'} list={item.size}/>
+                            <Dropdown labelName={'Sizes:'} list={item.size} name={'sizes'} />
                         </div>
                         <div>
-                            <Dropdown labelName={'Colors'} list={item.color}/>
+                            <Dropdown labelName={'Colors'} list={item.color} name={'colors'} />
                         </div>
                     </dl>
                 </div>
