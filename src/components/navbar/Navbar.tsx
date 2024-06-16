@@ -1,5 +1,5 @@
 import { Link, type NavigateFunction, useNavigate } from 'react-router-dom'
-import { FaShoppingCart, FaBalanceScale, FaUserAlt } from 'react-icons/fa'
+import { FaUserAlt } from 'react-icons/fa'
 import { navData } from '../../assets/data/navData'
 import {FC} from "react";
 import {useSelector} from "react-redux";

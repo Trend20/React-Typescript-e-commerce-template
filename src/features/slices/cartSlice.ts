@@ -9,12 +9,19 @@ interface CartItem {
 interface InitialState {
   items: CartItem[]
   isEmpty: boolean
+  subTotal:0
 }
 
 const initialState: InitialState = {
   items: [],
-  isEmpty: true
+  isEmpty: true,
+  subTotal:0
 }
+
+const calculateSubtotal = (items:any[]) => {
+  return items.reduce((total:number, item: any) => total + item.price, 0);
+};
+
 
 const cartSlice = createSlice({
   name: 'cart',
@@ -22,7 +29,8 @@ const cartSlice = createSlice({
   reducers: {
     addItemToCart: (state: InitialState, action: { payload: any, type: string }): void => {
       state.items.push(action.payload);
-      state.isEmpty = false
+      state.isEmpty = false;
+      state.subTotal = calculateSubtotal(state.items);
     },
     removeItemFromCart: (state, action) => {
       state.items = state.items.filter((item:any) => item.id !== action.payload.id);
