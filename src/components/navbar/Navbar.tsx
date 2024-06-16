@@ -3,6 +3,7 @@ import { FaShoppingCart, FaBalanceScale, FaUserAlt } from 'react-icons/fa'
 import { navData } from '../../assets/data/navData'
 import {FC} from "react";
 import {useSelector} from "react-redux";
+import CartIcon from "./CartIcon";
 
 const Navbar: FC = () => {
     const navigate: NavigateFunction = useNavigate()
@@ -24,14 +25,7 @@ const Navbar: FC = () => {
             </ul>
         </div>
         <div className="nav-action cursor-pointer">
-            <span
-                className="flex relative"
-                onClick={() => {
-                navigate('/cart')
-            }}>
-                <i><FaShoppingCart fill="#023047"/></i>
-                <p className="absolute left-5 -top-3">{items.length}</p>
-            </span>
+            <CartIcon items={items}/>
             <span className="flex relative" onClick={() => {
                 navigate('/comparison')
             }}>
