@@ -4,6 +4,7 @@ import { navData } from '../../assets/data/navData'
 import {FC} from "react";
 import {useSelector} from "react-redux";
 import CartIcon from "./CartIcon";
+import CompareIcon from "./CompareIcon";
 
 const Navbar: FC = () => {
     const navigate: NavigateFunction = useNavigate()
@@ -24,16 +25,10 @@ const Navbar: FC = () => {
                 }
             </ul>
         </div>
-        <div className="nav-action cursor-pointer">
-            <CartIcon items={items}/>
-            <span className="flex relative" onClick={() => {
-                navigate('/comparison')
-            }}>
-                <i><FaBalanceScale fill="#023047"/></i>
-                <p className="absolute left-5 -top-3">{items.length}</p>
-
-            </span>
-            <p onClick={() => {
+        <div className="nav-action cursor-pointer space-x-5">
+            <CartIcon items={items} />
+            <CompareIcon items={items} />
+            <p className="bg-gray-200 p-3 rounded-full justify-center items-center" onClick={() => {
                 navigate('/login')
             }} id='auth-icon'><i><FaUserAlt  fill="#023047"/></i></p>
         </div>
