@@ -42,9 +42,9 @@ const CartItem:FC<CartItemProps> = ({item}) =>{
                     {/*        className="h-8 w-12 rounded border-gray-200 bg-gray-50 p-0 text-center text-xs text-gray-600 [-moz-appearance:_textfield] focus:outline-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none"*/}
                     {/*    />*/}
                     {/*</form>*/}
-                    <button onClick={() => dispatch(removeItemFromCart(item))} className="text-gray-600 transition hover:text-red-600">
+                    <button onClick={() => dispatch(removeItemFromCart(item))} className="text-gray-600 bg-gray-100 p-3 rounded-full justify-center items-center transition hover:text-red-600">
                         <span className="sr-only">Remove item</span>
-                        <AiOutlineDelete />
+                        <AiOutlineDelete fill="#bc4749"/>
                     </button>
                 </div>
             </li>
