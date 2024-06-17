@@ -7,9 +7,9 @@ interface CartItem {
 }
 
 interface InitialState {
-  items: CartItem[]
-  isEmpty: boolean
-  subTotal:0
+  items: CartItem[];
+  isEmpty: boolean;
+  subTotal: number | string | any;
 }
 
 const initialState: InitialState = {
@@ -19,7 +19,7 @@ const initialState: InitialState = {
 }
 
 const calculateSubtotal = (items:any[]) => {
-  return items.reduce((total:number, item: any) => total + item.price, 0);
+  return Math.ceil(items.reduce((total:number, item: any) => total + item.price, 0));
 };
 
 
