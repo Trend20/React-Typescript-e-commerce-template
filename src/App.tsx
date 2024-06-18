@@ -23,6 +23,7 @@ import axios from "axios";
 import {fetchAllProducts} from "./features/slices/productSlice";
 import CartPage from "./pages/cart/Cart";
 import Toast from "./components/common/Toast";
+import CheckoutPage from "./pages/order/CheckoutPage";
 
 const App:FC = () => {
 
@@ -79,6 +80,7 @@ const App:FC = () => {
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/contacts" element={<Contact />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/cart/checkout" element={<CheckoutPage />} />
             <Route path="/store/category/accessories" element={<Accessories />} />
             <Route path="/store/category/outdoor" element={<Outdoor />} />
             <Route path="/store/category/mens" element={<Mens />} />
