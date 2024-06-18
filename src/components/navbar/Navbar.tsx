@@ -13,7 +13,7 @@ const Navbar: FC = () => {
     <div className='navbar'>
       <div className="logo">
           <Link to={'/'} className="flex">
-              <img src="/logo.png" alt="logo" className="w-24"/>
+              <img src="/logo1.svg" alt="logo" className="w-24"/>
           </Link>
       </div>
         <div className="nav-links">
