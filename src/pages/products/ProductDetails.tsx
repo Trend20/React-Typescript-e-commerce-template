@@ -45,11 +45,11 @@ const ProductDetails:FC = () => {
             <div>
                 <img src={product.img} alt={product.name}/>
             </div>
-            <div>
-                <h1>{product.name}</h1>
-                <p>${product.price}</p>
-                <hr/>
-                <p>{product.description}</p>
+            <div className="flex flex-col px-4 py-2">
+                <h1 className="font-bold py-2">{product.name}</h1>
+                <p className="font-bold mt-2">${product.price}</p>
+                <hr className="mt-2"/>
+                <p className="text-lg py-3">{product.description}</p>
                 <p>Category: {product.category}</p>
                 <p>Stock Status: {product.stock_status}</p>
                 <p>Cart Status: {product.cart_status}</p>
