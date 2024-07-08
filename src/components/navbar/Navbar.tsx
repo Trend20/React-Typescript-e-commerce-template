@@ -5,6 +5,7 @@ import {FC} from "react";
 import {useSelector} from "react-redux";
 import CartIcon from "./CartIcon";
 import CompareIcon from "./CompareIcon";
+import Logo from "./Logo";
 
 const Navbar: FC = () => {
     const navigate: NavigateFunction = useNavigate()
@@ -12,9 +13,7 @@ const Navbar: FC = () => {
   return (
     <div className='navbar'>
       <div className="logo">
-          <Link to={'/'} className="flex">
-              <img src="/logo1.svg" alt="logo" className="w-24"/>
-          </Link>
+         <Logo />
       </div>
         <div className="nav-links">
             <ul>
