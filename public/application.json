@@ -1,0 +1,29 @@
+{
+
+  "features": [
+    {
+      "id": 2,
+      "icon": "/icons/shipping.svg",
+      "title": "Free shipping",
+      "description": "Standard shipping"
+    },
+    {
+      "id": 3,
+      "icon": "/icons/discount.svg",
+      "title": "Special discounts",
+      "description": "Guaranteed saving"
+    },
+    {
+      "id": 4,
+      "icon": "/icons/payment.svg",
+      "title": "Buyers protection",
+      "description": "Secure payment"
+    },
+    {
+      "id": 1,
+      "icon": "/icons/customer.svg",
+      "title": "Customer service",
+      "description": "Give us feedback"
+    }
+  ]
+}
