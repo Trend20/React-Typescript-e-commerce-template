@@ -1,6 +1,6 @@
 import React, {FC, useEffect, useState} from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './App.css'
+import './styles/App.css'
 import Login from './pages/login/Login'
 import Register from './pages/register/Register'
 import Products from './pages/products/Products'
