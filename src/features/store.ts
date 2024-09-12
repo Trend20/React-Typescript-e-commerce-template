@@ -1,13 +1,35 @@
-import { configureStore } from '@reduxjs/toolkit'
-import authSlice from './slices/authSlice'
-import { type ToolkitStore } from '@reduxjs/toolkit/dist/configureStore'
-import productSlice from './slices/productSlice'
-import cartSlice from './slices/cartSlice'
+import { configureStore } from "@reduxjs/toolkit";
 
-export const store: ToolkitStore<{ auth: any }> = configureStore({
-  reducer: {
-    auth: authSlice,
-    products: productSlice,
-    cart: cartSlice
-  }
-})
+import {
+  persistReducer,
+  persistStore,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from "redux-persist";
+import storage from "redux-persist/lib/storage";
+import rootSlice from "./rootSlice";
+
+const persistConfig = {
+  key: "root",
+  storage,
+};
+
+const persistedSlice = persistReducer(persistConfig, rootSlice);
+
+export const store = configureStore({
+  reducer: persistedSlice,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
+});
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+export const persist = persistStore(store);
